@@ -1,0 +1,57 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --height-footer-contact:222px;
+    
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-size: 1.6rem;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+/* Class */
+.c-black{
+    color: #000;
+    margin: 0;
+}
+.fs-16{
+    font-size: 1.6rem;
+}
+.fs-40{
+    font-size: 4rem;
+}
+/* Class end */
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes growth {
+    from {
+        transform: scale(var(--growth-from));
+    }
+
+    to {
+        transform: scale(var(--growth-to));
+    }
+}
