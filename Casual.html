@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Casual</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+            <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/css/bootstrap-slider.css" integrity="sha512-SZgE3m1he0aEF3tIxxnz/3mXu/u/wlMNxQSnE0Cni9j/O8Gs+TjM9tm1NX34nRQ7GiLwUEzwuE3Wv2FLz2667w==" crossorigin="anonymous" />
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/bootstrap-slider.min.js" integrity="sha512-f0VlzJbcEB6KiW8ZVtL+5HWPDyW1+nJEjguZ5IVnSQkvZbwBt2RfCBY0CBO1PsMAqxxrG4Di6TfsCPP3ZRwKpA==" crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="./assets/css/base.css">
+        <link rel="stylesheet" href="./assets/css/grid.css">
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="stylesheet" href="./assets/css/details.css">
+        <link rel="stylesheet" href="./assets/css/casual.css">
+        <link rel="stylesheet" href="./assets/css/responsive.css">
+        <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.6.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap&subset=vietnamese"
+            rel="stylesheet">
+    </head>
+<body>
+    <div class="home">
+            <!-- HEADER -->
+            <header class="header">
+                <!-- HEADER NOTIFICATION SIGN UP -->
+                <div class="header__noti-wrap ">
+                    <div class="grid wide header__noti">
+                        <p class="header__noti-content">Sign up and get 20% off to your first order. </p>
+                        <a class="header__noti-link" href=""> Sign Up Now</a>
+                        <div class="header__noti-close__wrap hide-on-mobile">
+                            <i class=" header__noti-close fa-solid fa-xmark"></i>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+                <div class="grid wide">
+                    <!--HEADER-WITH-SEARCH  -->
+                    <div class="header-with-search">
+    
+                        <div class="header__wrap">
+                            <div class="header-mobile-select  " data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                                <i class="header-mobile-select__icon fa-solid fa-bars"></i>
+                            </div>
+                            <!--  -->
+    
+                            <div class="offcanvas offcanvas-start w-75" tabindex="-1" id="offcanvasExample"
+                                aria-labelledby="offcanvasExampleLabel">
+                                <button type="button" class="btn-close position-absolute " data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+    
+                                <ul class="header__navbar-list " id="navbar">
+                                    <li class="header__navbar-item dropdown">
+                                        <a href="" class="header__navbar-link" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">Shop
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </a>
+                                        <ul class="dropdown-menu w-100" style="">
+                                            <li><a class="dropdown-item p-3 fs-5" href="#">Action</a></li>
+                                            <li><a class="dropdown-item p-3 fs-5" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item p-3 fs-5" href="#">Something else here</a></li>
+                                        </ul>
+    
+                                        <!--  -->
+                                    </li>
+                                    <li class="header__navbar-item">
+                                        <a href="" class="header__navbar-link">On Sale</a>
+    
+                                    </li>
+                                    <li class="header__navbar-item">
+                                        <a href="" class="header__navbar-link">New Arrivals</a>
+    
+                                    </li>
+                                    <li class="header__navbar-item">
+                                        <a href="" class="header__navbar-link">Brands</a>
+    
+                                    </li>
+    
+                                </ul>
+    
+    
+    
+                            </div>
+                            <!--  -->
+    
+                            <!--  -->
+                            <div class="header-mobile-select-show">
+                                <div class="header-mobile-select-overLay"></div>
+                                <ul class="header-mobile-select__list ">
+                                    <li class="header-mobile-select__item">
+                                        <a href="" class="header-mobile-select__link">Shop
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </a>
+    
+                                    </li>
+                                    <li class="header-mobile-select__item">
+                                        <a href="" class="header-mobile-select__link">On Sale</a>
+    
+                                    </li>
+                                    <li class="header-mobile-select__item">
+                                        <a href="" class="header-mobile-select__link">New Arrivals</a>
+    
+                                    </li>
+                                    <li class="header-mobile-select__item">
+                                        <a href="" class="header-mobile-select__link">Brands</a>
+    
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="header__logo">
+    
+                                <a href="./Home.html" class="header__logo-link">SHOP.CO</a>
+                            </div>
+                        </div>
+                        <ul class="header__navbar-list hide-on-mobile-tablet" id="navbar">
+                            <li class="header__navbar-item dropdown">
+                                <a href="" class="header__navbar-link " href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">Shop
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </a>
+                                <ul class="dropdown-menu ">
+                                    <li><a class="dropdown-item p-3 fs-5" href="#">Action</a></li>
+                                    <li><a class="dropdown-item p-3 fs-5" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item p-3 fs-5" href="#">Something else here</a></li>
+                                </ul>
+    
+                                <!--  -->
+                            </li>
+                            <li class="header__navbar-item">
+                                <a href="" class="header__navbar-link">On Sale</a>
+    
+                            </li>
+                            <li class="header__navbar-item">
+                                <a href="" class="header__navbar-link">New Arrivals</a>
+    
+                            </li>
+                            <li class="header__navbar-item">
+                                <a href="" class="header__navbar-link">Brands</a>
+    
+                            </li>
+                        </ul>
+                        <div class="header__search hide-on-mobile">
+                            <div class="header__search-wrap">
+                                <div class="header__search__searchIcon"></div>
+                                <input class="header__search-input" placeholder="Search for products" type="text">
+                            </div>
+                        </div>
+    
+    
+                        <div class="header__logo-auth">
+                            <div class="header__search__searchIcon-mobile hide-on-pc hide-on-tablet"
+                                data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                                aria-controls="collapseExample">
+                                <i class="hide-on-pc fa-solid fa-magnifying-glass header__logo-auth-icon"></i>
+    
+                            </div>
+                            <i class="fa-solid fa-cart-shopping header__logo-auth-icon"></i>
+    
+                            <i class="fa-regular fa-circle-user header__logo-auth-icon" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
+                            <div class="offcanvas offcanvas-end w-75" tabindex="-1" id="offcanvasRight"
+                                aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <form>
+    
+                                        <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+    
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" id="floatingInput"
+                                                placeholder="name@example.com">
+                                            <label for="floatingInput">Email address</label>
+                                        </div>
+                                        <div class="form-floating mt-1">
+                                            <input type="password" class="form-control" id="floatingPassword"
+                                                placeholder="Password">
+                                            <label for="floatingPassword">Password</label>
+                                        </div>
+    
+                                        <div class="form-check text-start my-3">
+                                            <input class="form-check-input" type="checkbox" value="remember-me"
+                                                id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Remember me
+                                            </label>
+                                        </div>
+                                        <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
+                                        <p class="mt-5 mb-3 text-body-secondary">© 2017–2024</p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--offcanvas search begin  -->
+    
+                <div class="collapse" id="collapseExample">
+                    <div class="bd-example m-0 border-0">
+    
+                        <nav class="navbar bg-white">
+                            <div class="container-fluid justify-content-center align-items-center">
+                                <form class="d-flex pb-3 " role="search">
+                                    <input style="width: 260px;height:30px;border-radius:12px" class="form-control me-2"
+                                        type="search" placeholder="Search" aria-label="Search">
+                                    <button style="width: 60px;height:30px;border-radius:12px"
+                                        class="btn btn-outline-success" type="submit">Search</button>
+                                </form>
+                            </div>
+                        </nav>
+    
+                    </div>
+                </div>
+                <!-- offcanvas search end -->
+            </header>
+<div class="home-casual">
+    <div class="grid wide">
+        <div class="line line-home-details__mobile line-home-details__mobile-top "></div>
+        <!-- path begin -->
+        <div class="path-details">
+            <p class="path-details__text">Home</p>
+            <svg class="path-details__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path
+                    d="M6.53073 2.46937L11.5307 7.46937C11.6007 7.53905 11.6561 7.62184 11.694 7.71301C11.7318 7.80417 11.7513 7.90191 11.7513 8.00062C11.7513 8.09933 11.7318 8.19707 11.694 8.28824C11.6561 8.3794 11.6007 8.46219 11.5307 8.53187L6.53073 13.5319C6.38984 13.6728 6.19874 13.7519 5.99948 13.7519C5.80023 13.7519 5.60913 13.6728 5.46823 13.5319C5.32734 13.391 5.24818 13.1999 5.24818 13.0006C5.24818 12.8014 5.32734 12.6103 5.46823 12.4694L9.93761 8L5.46761 3.53062C5.32671 3.38973 5.24756 3.19863 5.24756 2.99937C5.24756 2.80011 5.32671 2.60902 5.46761 2.46812C5.60851 2.32723 5.7996 2.24807 5.99886 2.24807C6.19812 2.24807 6.38921 2.32723 6.53011 2.46812L6.53073 2.46937Z"
+                    fill="black" fill-opacity="0.6" />
+            </svg>
+         
+            <p class="path-details__text path-details__text--active">Casual</p>
+        </div>
+        <!-- path end -->
+         <div class="row">
+            <!-- col left begin -->
+            <div class="col c-12 l-3 hide-on-mobile-tablet  casual-filters-wrap">
+                <div class="casual-filters">
+                    <div class="casual-filter d-flex justify-content-between align-items-center">
+                        <span class="casual-filters__name ">Filters</span>
+                        <svg class="casual-filters__icon hide-on-mobile" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path d="M13.125 12.125V20.75C13.125 21.0484 13.0065 21.3345 12.7955 21.5455C12.5845 21.7565 12.2984 21.875 12 21.875C11.7016 21.875 11.4155 21.7565 11.2045 21.5455C10.9935 21.3345 10.875 21.0484 10.875 20.75V12.125C10.875 11.8266 10.9935 11.5405 11.2045 11.3295C11.4155 11.1185 11.7016 11 12 11C12.2984 11 12.5845 11.1185 12.7955 11.3295C13.0065 11.5405 13.125 11.8266 13.125 12.125ZM18.75 18.5C18.4516 18.5 18.1655 18.6185 17.9545 18.8295C17.7435 19.0405 17.625 19.3266 17.625 19.625V20.75C17.625 21.0484 17.7435 21.3345 17.9545 21.5455C18.1655 21.7565 18.4516 21.875 18.75 21.875C19.0484 21.875 19.3345 21.7565 19.5455 21.5455C19.7565 21.3345 19.875 21.0484 19.875 20.75V19.625C19.875 19.3266 19.7565 19.0405 19.5455 18.8295C19.3345 18.6185 19.0484 18.5 18.75 18.5ZM21 14.75H19.875V4.25C19.875 3.95163 19.7565 3.66548 19.5455 3.4545C19.3345 3.24353 19.0484 3.125 18.75 3.125C18.4516 3.125 18.1655 3.24353 17.9545 3.4545C17.7435 3.66548 17.625 3.95163 17.625 4.25V14.75H16.5C16.2016 14.75 15.9155 14.8685 15.7045 15.0795C15.4935 15.2905 15.375 15.5766 15.375 15.875C15.375 16.1734 15.4935 16.4595 15.7045 16.6705C15.9155 16.8815 16.2016 17 16.5 17H21C21.2984 17 21.5845 16.8815 21.7955 16.6705C22.0065 16.4595 22.125 16.1734 22.125 15.875C22.125 15.5766 22.0065 15.2905 21.7955 15.0795C21.5845 14.8685 21.2984 14.75 21 14.75ZM5.25 15.5C4.95163 15.5 4.66548 15.6185 4.4545 15.8295C4.24353 16.0405 4.125 16.3266 4.125 16.625V20.75C4.125 21.0484 4.24353 21.3345 4.4545 21.5455C4.66548 21.7565 4.95163 21.875 5.25 21.875C5.54837 21.875 5.83452 21.7565 6.0455 21.5455C6.25647 21.3345 6.375 21.0484 6.375 20.75V16.625C6.375 16.3266 6.25647 16.0405 6.0455 15.8295C5.83452 15.6185 5.54837 15.5 5.25 15.5ZM7.5 11.75H6.375V4.25C6.375 3.95163 6.25647 3.66548 6.0455 3.4545C5.83452 3.24353 5.54837 3.125 5.25 3.125C4.95163 3.125 4.66548 3.24353 4.4545 3.4545C4.24353 3.66548 4.125 3.95163 4.125 4.25V11.75H3C2.70163 11.75 2.41548 11.8685 2.2045 12.0795C1.99353 12.2905 1.875 12.5766 1.875 12.875C1.875 13.1734 1.99353 13.4595 2.2045 13.6705C2.41548 13.8815 2.70163 14 3 14H7.5C7.79837 14 8.08452 13.8815 8.2955 13.6705C8.50647 13.4595 8.625 13.1734 8.625 12.875C8.625 12.5766 8.50647 12.2905 8.2955 12.0795C8.08452 11.8685 7.79837 11.75 7.5 11.75ZM14.25 7.25H13.125V4.25C13.125 3.95163 13.0065 3.66548 12.7955 3.4545C12.5845 3.24353 12.2984 3.125 12 3.125C11.7016 3.125 11.4155 3.24353 11.2045 3.4545C10.9935 3.66548 10.875 3.95163 10.875 4.25V7.25H9.75C9.45163 7.25 9.16548 7.36853 8.9545 7.5795C8.74353 7.79048 8.625 8.07663 8.625 8.375C8.625 8.67337 8.74353 8.95952 8.9545 9.1705C9.16548 9.38147 9.45163 9.5 9.75 9.5H14.25C14.5484 9.5 14.8345 9.38147 15.0455 9.1705C15.2565 8.95952 15.375 8.67337 15.375 8.375C15.375 8.07663 15.2565 7.79048 15.0455 7.5795C14.8345 7.36853 14.5484 7.25 14.25 7.25Z" fill="black" fill-opacity="0.4"/>
+                          </svg>
+                          <button type="button" class="hide-on-pc btn-close" aria-label="Close"></button>
+                    </div>
+                    <div class="line line-home-details__mobile "></div>
+                    <ul class="casual-dressStyle-list ">
+                        <li class="casual-dressStyle-item">
+                            <a href="" class="casual-dressStyle__link">
+                                <span class="casual-dressStyle__link-name"> T-shirts
+                                </span>
+                
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M6.53073 2.46952L11.5307 7.46952C11.6007 7.5392 11.6561 7.622 11.694 7.71316C11.7318 7.80432 11.7513 7.90206 11.7513 8.00077C11.7513 8.09948 11.7318 8.19722 11.694 8.28839C11.6561 8.37955 11.6007 8.46235 11.5307 8.53202L6.53073 13.532C6.38984 13.6729 6.19874 13.7521 5.99948 13.7521C5.80023 13.7521 5.60913 13.6729 5.46823 13.532C5.32734 13.3911 5.24818 13.2 5.24818 13.0008C5.24818 12.8015 5.32734 12.6104 5.46823 12.4695L9.93761 8.00015L5.46761 3.53078C5.32671 3.38988 5.24756 3.19878 5.24756 2.99953C5.24756 2.80027 5.32671 2.60917 5.46761 2.46828C5.60851 2.32738 5.7996 2.24822 5.99886 2.24822C6.19812 2.24822 6.38921 2.32738 6.53011 2.46828L6.53073 2.46952Z" fill="black" fill-opacity="0.6"/>
+                </svg>
+                            </a>
+                        </li>
+                        <li class="casual-dressStyle-item">
+                            <a href="" class="casual-dressStyle__link">
+                                <span class="casual-dressStyle__link-name">
+                                    Shorts
+                            </span> 
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M6.53073 2.46952L11.5307 7.46952C11.6007 7.5392 11.6561 7.622 11.694 7.71316C11.7318 7.80432 11.7513 7.90206 11.7513 8.00077C11.7513 8.09948 11.7318 8.19722 11.694 8.28839C11.6561 8.37955 11.6007 8.46235 11.5307 8.53202L6.53073 13.532C6.38984 13.6729 6.19874 13.7521 5.99948 13.7521C5.80023 13.7521 5.60913 13.6729 5.46823 13.532C5.32734 13.3911 5.24818 13.2 5.24818 13.0008C5.24818 12.8015 5.32734 12.6104 5.46823 12.4695L9.93761 8.00015L5.46761 3.53078C5.32671 3.38988 5.24756 3.19878 5.24756 2.99953C5.24756 2.80027 5.32671 2.60917 5.46761 2.46828C5.60851 2.32738 5.7996 2.24822 5.99886 2.24822C6.19812 2.24822 6.38921 2.32738 6.53011 2.46828L6.53073 2.46952Z" fill="black" fill-opacity="0.6"/>
+                </svg>
+                            </a>
+                        </li>
+                        <li class="casual-dressStyle-item">
+                            <a href="" class="casual-dressStyle__link">
+                                <span class="casual-dressStyle__link-name">
+                                    Shirts
+                            </span> 
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M6.53073 2.46952L11.5307 7.46952C11.6007 7.5392 11.6561 7.622 11.694 7.71316C11.7318 7.80432 11.7513 7.90206 11.7513 8.00077C11.7513 8.09948 11.7318 8.19722 11.694 8.28839C11.6561 8.37955 11.6007 8.46235 11.5307 8.53202L6.53073 13.532C6.38984 13.6729 6.19874 13.7521 5.99948 13.7521C5.80023 13.7521 5.60913 13.6729 5.46823 13.532C5.32734 13.3911 5.24818 13.2 5.24818 13.0008C5.24818 12.8015 5.32734 12.6104 5.46823 12.4695L9.93761 8.00015L5.46761 3.53078C5.32671 3.38988 5.24756 3.19878 5.24756 2.99953C5.24756 2.80027 5.32671 2.60917 5.46761 2.46828C5.60851 2.32738 5.7996 2.24822 5.99886 2.24822C6.19812 2.24822 6.38921 2.32738 6.53011 2.46828L6.53073 2.46952Z" fill="black" fill-opacity="0.6"/>
+                </svg>
+                            </a>
+                        </li>
+                        <li class="casual-dressStyle-item">
+                            <a href="" class="casual-dressStyle__link">
+                                <span class="casual-dressStyle__link-name">
+                                    Hoodie
+                            </span> 
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M6.53073 2.46952L11.5307 7.46952C11.6007 7.5392 11.6561 7.622 11.694 7.71316C11.7318 7.80432 11.7513 7.90206 11.7513 8.00077C11.7513 8.09948 11.7318 8.19722 11.694 8.28839C11.6561 8.37955 11.6007 8.46235 11.5307 8.53202L6.53073 13.532C6.38984 13.6729 6.19874 13.7521 5.99948 13.7521C5.80023 13.7521 5.60913 13.6729 5.46823 13.532C5.32734 13.3911 5.24818 13.2 5.24818 13.0008C5.24818 12.8015 5.32734 12.6104 5.46823 12.4695L9.93761 8.00015L5.46761 3.53078C5.32671 3.38988 5.24756 3.19878 5.24756 2.99953C5.24756 2.80027 5.32671 2.60917 5.46761 2.46828C5.60851 2.32738 5.7996 2.24822 5.99886 2.24822C6.19812 2.24822 6.38921 2.32738 6.53011 2.46828L6.53073 2.46952Z" fill="black" fill-opacity="0.6"/>
+                </svg>
+                            </a>
+                        </li>
+                        <li class="casual-dressStyle-item">
+                            <a href="" class="casual-dressStyle__link">
+                                <span class="casual-dressStyle__link-name">
+                                    Jeans
+                            </span> 
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                  <path d="M6.53073 2.46952L11.5307 7.46952C11.6007 7.5392 11.6561 7.622 11.694 7.71316C11.7318 7.80432 11.7513 7.90206 11.7513 8.00077C11.7513 8.09948 11.7318 8.19722 11.694 8.28839C11.6561 8.37955 11.6007 8.46235 11.5307 8.53202L6.53073 13.532C6.38984 13.6729 6.19874 13.7521 5.99948 13.7521C5.80023 13.7521 5.60913 13.6729 5.46823 13.532C5.32734 13.3911 5.24818 13.2 5.24818 13.0008C5.24818 12.8015 5.32734 12.6104 5.46823 12.4695L9.93761 8.00015L5.46761 3.53078C5.32671 3.38988 5.24756 3.19878 5.24756 2.99953C5.24756 2.80027 5.32671 2.60917 5.46761 2.46828C5.60851 2.32738 5.7996 2.24822 5.99886 2.24822C6.19812 2.24822 6.38921 2.32738 6.53011 2.46828L6.53073 2.46952Z" fill="black" fill-opacity="0.6"/>
+                </svg>
+                            </a>
+                        </li>
+                    </ul>
+
+
+                <div class="line line-home-details__mobile"></div>
+                <div class="casual-price">
+<div class="casuals-price__wrap d-flex justify-content-between align-items-center">
+    <span class="casuals-price__name">Price</span>
+    <svg class="casuals-price__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+        <path d="M2.4694 9.96945L7.4694 4.96945C7.53908 4.89953 7.62187 4.84405 7.71304 4.8062C7.8042 4.76834 7.90194 4.74886 8.00065 4.74886C8.09936 4.74886 8.1971 4.76834 8.28827 4.8062C8.37943 4.84405 8.46222 4.89953 8.5319 4.96945L13.5319 9.96945C13.6728 10.1103 13.752 10.3014 13.752 10.5007C13.752 10.7 13.6728 10.8911 13.5319 11.0319C13.391 11.1728 13.1999 11.252 13.0007 11.252C12.8014 11.252 12.6103 11.1728 12.4694 11.0319L8.00003 6.56257L3.53065 11.0326C3.38976 11.1735 3.19866 11.2526 2.9994 11.2526C2.80015 11.2526 2.60905 11.1735 2.46815 11.0326C2.32726 10.8917 2.2481 10.7006 2.2481 10.5013C2.2481 10.3021 2.32726 10.111 2.46815 9.97007L2.4694 9.96945Z" fill="black"/>
+      </svg>
+      
+</div>
+<div id="slider-outer-div">  
+    <div id="slider-div">
+
+      <div class="w-100">
+        <input id="ex2" type="text" data-slider-min="0"
+           data-slider-max="1000" data-slider-value="[50,200]"
+           data-slider-tooltip="hide" />
+      </div>
+    
+    </div>
+    <div id="slider-max-label" class="slider-label"></div>
+    <div id="slider-min-label" class="slider-label"></div>
+  </div>
+                </div>
+
+<div class="line line-home-details__mobile"></div>
+<div class="casual-colors">
+<div class="casual-colors__wrap">
+    <span class="casual-colors__name">Colors</span>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+        <path d="M2.4694 9.96945L7.4694 4.96945C7.53908 4.89953 7.62187 4.84405 7.71304 4.8062C7.8042 4.76834 7.90194 4.74886 8.00065 4.74886C8.09936 4.74886 8.1971 4.76834 8.28827 4.8062C8.37943 4.84405 8.46222 4.89953 8.5319 4.96945L13.5319 9.96945C13.6728 10.1103 13.752 10.3014 13.752 10.5007C13.752 10.7 13.6728 10.8911 13.5319 11.0319C13.391 11.1728 13.1999 11.252 13.0007 11.252C12.8014 11.252 12.6103 11.1728 12.4694 11.0319L8.00003 6.56257L3.53065 11.0326C3.38976 11.1735 3.19866 11.2526 2.9994 11.2526C2.80015 11.2526 2.60905 11.1735 2.46815 11.0326C2.32726 10.8917 2.2481 10.7006 2.2481 10.5013C2.2481 10.3021 2.32726 10.111 2.46815 9.97007L2.4694 9.96945Z" fill="black"/>
+      </svg>
+</div>
+<div class="casual-colors__chooseColors-wrap row no-gutters">
+    <div class="col c-2 m-2 l-2-4 casual-colors-chooseColor-wrap d-flex justify-content-center ">
+        <div class="casual-colors__chooseColor casual-colors__chooseColor--green"></div>
+    </div>
+    <div class="col c-2 m-2 l-2-4 casual-colors-chooseColor-wrap d-flex justify-content-center ">
+        <div class="casual-colors__chooseColor casual-colors__chooseColor--red"></div>
+    </div>
+    <div class="col c-2 m-2 l-2-4 casual-colors-chooseColor-wrap d-flex justify-content-center ">
+        <div class="casual-colors__chooseColor casual-colors__chooseColor--yellow"></div>
+    </div>
+    <div class="col c-2 m-2 l-2-4 casual-colors-chooseColor-wrap d-flex justify-content-center ">
+        <div class="casual-colors__chooseColor casual-colors__chooseColor--orange"></div>
+    </div>
+    <div class="col c-2 m-2 l-2-4 casual-colors-chooseColor-wrap d-flex justify-content-center ">
+        <div class="casual-colors__chooseColor casual-colors__chooseColor--blue"></div>
+    </div>
+    <div class="col c-2 m-2 l-2-4 casual-colors-chooseColor-wrap d-flex justify-content-center ">
+        <div class="casual-colors__chooseColor casual-colors__chooseColor--active casual-colors__chooseColor--darkBlue">
+            <i class="casual-colors__chooseColor__icon--active fa-solid fa-check"></i>
+        </div>
+        
+    </div>
+    <div class="col c-2 m-2 l-2-4 casual-colors-chooseColor-wrap d-flex justify-content-center ">
+        <div class="casual-colors__chooseColor casual-colors__chooseColor--purple"></div>
+    </div>
+    <div class="col c-2 m-2 l-2-4 casual-colors-chooseColor-wrap d-flex justify-content-center ">
+        <div class="casual-colors__chooseColor casual-colors__chooseColor--pink"></div>
+    </div>
+    <div class="col c-2 m-2 l-2-4 casual-colors-chooseColor-wrap d-flex justify-content-center ">
+        <div class="casual-colors__chooseColor casual-colors__chooseColor--white"></div>
+    </div>
+    <div class="col c-2 m-2 l-2-4 casual-colors-chooseColor-wrap d-flex justify-content-center ">
+        <div class="casual-colors__chooseColor casual-colors__chooseColor--black"></div>
+    </div>
+</div>
+</div>
+<div class="line line-home-details__mobile"></div>
+<!-- casual size begin -->
+<div class="casual-size">
+<div class="casual-size__wrap d-flex justify-content-between align-items-center">
+    <span class="casual-size__name">Size</span>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+        <path d="M2.4694 9.96945L7.4694 4.96945C7.53908 4.89953 7.62187 4.84405 7.71304 4.8062C7.8042 4.76834 7.90194 4.74886 8.00065 4.74886C8.09936 4.74886 8.1971 4.76834 8.28827 4.8062C8.37943 4.84405 8.46222 4.89953 8.5319 4.96945L13.5319 9.96945C13.6728 10.1103 13.752 10.3014 13.752 10.5007C13.752 10.7 13.6728 10.8911 13.5319 11.0319C13.391 11.1728 13.1999 11.252 13.0007 11.252C12.8014 11.252 12.6103 11.1728 12.4694 11.0319L8.00003 6.56257L3.53065 11.0326C3.38976 11.1735 3.19866 11.2526 2.9994 11.2526C2.80015 11.2526 2.60905 11.1735 2.46815 11.0326C2.32726 10.8917 2.2481 10.7006 2.2481 10.5013C2.2481 10.3021 2.32726 10.111 2.46815 9.97007L2.4694 9.96945Z" fill="black"/>
+      </svg>
+</div>
+<div class="casual-size-chooseSize-wrap">
+<div class="casual-size__choseSize">XX-Small</div>
+<div class="casual-size__choseSize">X-Small</div>
+<div class="casual-size__choseSize">Small</div>
+<div class="casual-size__choseSize">Medium</div>
+<div class="casual-size__choseSize">Large</div>
+<div class="casual-size__choseSize">X-Large</div>
+<div class="casual-size__choseSize">XX-Large</div>
+<div class="casual-size__choseSize">3X-Large</div>
+<div class="casual-size__choseSize">4X-Large</div>
+</div>
+</div>
+<!-- casual size end -->
+ <div class="line line-home-details__mobile"></div>
+ <!-- dress style begin -->
+  <div class="casual-dressStyle">
+    <div class="casual-dressStyle-wrap d-flex justify-content-between align-items-center">
+        <span class="casual-dressStyle__name">Dress Style</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+            <path d="M2.4694 9.96939L7.4694 4.96939C7.53908 4.89947 7.62187 4.84399 7.71304 4.80614C7.8042 4.76828 7.90194 4.7488 8.00065 4.7488C8.09936 4.7488 8.1971 4.76828 8.28827 4.80614C8.37943 4.84399 8.46222 4.89947 8.5319 4.96939L13.5319 9.96939C13.6728 10.1103 13.752 10.3014 13.752 10.5006C13.752 10.6999 13.6728 10.891 13.5319 11.0319C13.391 11.1728 13.1999 11.2519 13.0007 11.2519C12.8014 11.2519 12.6103 11.1728 12.4694 11.0319L8.00003 6.56251L3.53065 11.0325C3.38976 11.1734 3.19866 11.2526 2.9994 11.2526C2.80015 11.2526 2.60905 11.1734 2.46815 11.0325C2.32726 10.8916 2.2481 10.7005 2.2481 10.5013C2.2481 10.302 2.32726 10.1109 2.46815 9.97001L2.4694 9.96939Z" fill="black"/>
+          </svg>
+    </div>
+    <ul class="casual-dressStyle-list ">
+        <li class="casual-dressStyle-item">
+            <a href="" class="casual-dressStyle__link">
+                <span class="casual-dressStyle__link-name"> Casual
+                </span>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+  <path d="M6.53073 2.46952L11.5307 7.46952C11.6007 7.5392 11.6561 7.622 11.694 7.71316C11.7318 7.80432 11.7513 7.90206 11.7513 8.00077C11.7513 8.09948 11.7318 8.19722 11.694 8.28839C11.6561 8.37955 11.6007 8.46235 11.5307 8.53202L6.53073 13.532C6.38984 13.6729 6.19874 13.7521 5.99948 13.7521C5.80023 13.7521 5.60913 13.6729 5.46823 13.532C5.32734 13.3911 5.24818 13.2 5.24818 13.0008C5.24818 12.8015 5.32734 12.6104 5.46823 12.4695L9.93761 8.00015L5.46761 3.53078C5.32671 3.38988 5.24756 3.19878 5.24756 2.99953C5.24756 2.80027 5.32671 2.60917 5.46761 2.46828C5.60851 2.32738 5.7996 2.24822 5.99886 2.24822C6.19812 2.24822 6.38921 2.32738 6.53011 2.46828L6.53073 2.46952Z" fill="black" fill-opacity="0.6"/>
+</svg>
+            </a>
+        </li>
+        <li class="casual-dressStyle-item">
+            <a href="" class="casual-dressStyle__link">
+                <span class="casual-dressStyle__link-name">
+                    Formal
+            </span> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+  <path d="M6.53073 2.46952L11.5307 7.46952C11.6007 7.5392 11.6561 7.622 11.694 7.71316C11.7318 7.80432 11.7513 7.90206 11.7513 8.00077C11.7513 8.09948 11.7318 8.19722 11.694 8.28839C11.6561 8.37955 11.6007 8.46235 11.5307 8.53202L6.53073 13.532C6.38984 13.6729 6.19874 13.7521 5.99948 13.7521C5.80023 13.7521 5.60913 13.6729 5.46823 13.532C5.32734 13.3911 5.24818 13.2 5.24818 13.0008C5.24818 12.8015 5.32734 12.6104 5.46823 12.4695L9.93761 8.00015L5.46761 3.53078C5.32671 3.38988 5.24756 3.19878 5.24756 2.99953C5.24756 2.80027 5.32671 2.60917 5.46761 2.46828C5.60851 2.32738 5.7996 2.24822 5.99886 2.24822C6.19812 2.24822 6.38921 2.32738 6.53011 2.46828L6.53073 2.46952Z" fill="black" fill-opacity="0.6"/>
+</svg>
+            </a>
+        </li>
+        <li class="casual-dressStyle-item">
+            <a href="" class="casual-dressStyle__link">
+                <span class="casual-dressStyle__link-name">
+                    Party
+            </span> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+  <path d="M6.53073 2.46952L11.5307 7.46952C11.6007 7.5392 11.6561 7.622 11.694 7.71316C11.7318 7.80432 11.7513 7.90206 11.7513 8.00077C11.7513 8.09948 11.7318 8.19722 11.694 8.28839C11.6561 8.37955 11.6007 8.46235 11.5307 8.53202L6.53073 13.532C6.38984 13.6729 6.19874 13.7521 5.99948 13.7521C5.80023 13.7521 5.60913 13.6729 5.46823 13.532C5.32734 13.3911 5.24818 13.2 5.24818 13.0008C5.24818 12.8015 5.32734 12.6104 5.46823 12.4695L9.93761 8.00015L5.46761 3.53078C5.32671 3.38988 5.24756 3.19878 5.24756 2.99953C5.24756 2.80027 5.32671 2.60917 5.46761 2.46828C5.60851 2.32738 5.7996 2.24822 5.99886 2.24822C6.19812 2.24822 6.38921 2.32738 6.53011 2.46828L6.53073 2.46952Z" fill="black" fill-opacity="0.6"/>
+</svg>
+            </a>
+        </li>
+        <li class="casual-dressStyle-item">
+            <a href="" class="casual-dressStyle__link">
+                <span class="casual-dressStyle__link-name">
+                    Gym  
+            </span> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+  <path d="M6.53073 2.46952L11.5307 7.46952C11.6007 7.5392 11.6561 7.622 11.694 7.71316C11.7318 7.80432 11.7513 7.90206 11.7513 8.00077C11.7513 8.09948 11.7318 8.19722 11.694 8.28839C11.6561 8.37955 11.6007 8.46235 11.5307 8.53202L6.53073 13.532C6.38984 13.6729 6.19874 13.7521 5.99948 13.7521C5.80023 13.7521 5.60913 13.6729 5.46823 13.532C5.32734 13.3911 5.24818 13.2 5.24818 13.0008C5.24818 12.8015 5.32734 12.6104 5.46823 12.4695L9.93761 8.00015L5.46761 3.53078C5.32671 3.38988 5.24756 3.19878 5.24756 2.99953C5.24756 2.80027 5.32671 2.60917 5.46761 2.46828C5.60851 2.32738 5.7996 2.24822 5.99886 2.24822C6.19812 2.24822 6.38921 2.32738 6.53011 2.46828L6.53073 2.46952Z" fill="black" fill-opacity="0.6"/>
+</svg>
+            </a>
+        </li>
+    </ul>
+  </div>
+  <!-- dress style end -->
+   <button class="btn-applyFilters">Apply Filter</button>
+                </div>
+            </div>
+            <!-- col left end -->
+            <!-- col right begin -->
+            <div class="col c-12 l-9">
+<div class="casual-product-heading-wrap ">
+    <span class="casual-product-heading__name">Casual</span>
+ <div class="casual-product-heading__sort-wrap ">
+    <p class="casual-product-heading__sort">Showing 1-10 of 100 Products</p>
+   
+
+    <p class="casual-product-heading__sort hide-on-mobile-tablet">Sort by: 
+        <p href="" class="casual-product-heading__sort-choose hide-on-mobile-tablet">Most Popular
+            <svg class="mb-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M13.5306 6.53063L8.5306 11.5306C8.46092 11.6005 8.37813 11.656 8.28696 11.6939C8.1958 11.7317 8.09806 11.7512 7.99935 11.7512C7.90064 11.7512 7.8029 11.7317 7.71173 11.6939C7.62057 11.656 7.53778 11.6005 7.4681 11.5306L2.4681 6.53063C2.3272 6.38973 2.24805 6.19864 2.24805 5.99938C2.24805 5.80012 2.3272 5.60902 2.4681 5.46813C2.60899 5.32723 2.80009 5.24808 2.99935 5.24808C3.19861 5.24808 3.3897 5.32723 3.5306 5.46813L7.99997 9.9375L12.4693 5.4675C12.6102 5.32661 12.8013 5.24745 13.0006 5.24745C13.1999 5.24745 13.391 5.32661 13.5318 5.4675C13.6727 5.6084 13.7519 5.7995 13.7519 5.99875C13.7519 6.19801 13.6727 6.38911 13.5318 6.53L13.5306 6.53063Z" fill="black"/>
+              </svg>
+        </p>
+    </p>
+ </div>
+ <div class="hide-on-pc casual-product-heading__filters" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <path d="M8.75 7.75V13.5C8.75 13.6989 8.67098 13.8897 8.53033 14.0303C8.38968 14.171 8.19891 14.25 8 14.25C7.80109 14.25 7.61032 14.171 7.46967 14.0303C7.32902 13.8897 7.25 13.6989 7.25 13.5V7.75C7.25 7.55109 7.32902 7.36032 7.46967 7.21967C7.61032 7.07902 7.80109 7 8 7C8.19891 7 8.38968 7.07902 8.53033 7.21967C8.67098 7.36032 8.75 7.55109 8.75 7.75ZM12.5 12C12.3011 12 12.1103 12.079 11.9697 12.2197C11.829 12.3603 11.75 12.5511 11.75 12.75V13.5C11.75 13.6989 11.829 13.8897 11.9697 14.0303C12.1103 14.171 12.3011 14.25 12.5 14.25C12.6989 14.25 12.8897 14.171 13.0303 14.0303C13.171 13.8897 13.25 13.6989 13.25 13.5V12.75C13.25 12.5511 13.171 12.3603 13.0303 12.2197C12.8897 12.079 12.6989 12 12.5 12ZM14 9.5H13.25V2.5C13.25 2.30109 13.171 2.11032 13.0303 1.96967C12.8897 1.82902 12.6989 1.75 12.5 1.75C12.3011 1.75 12.1103 1.82902 11.9697 1.96967C11.829 2.11032 11.75 2.30109 11.75 2.5V9.5H11C10.8011 9.5 10.6103 9.57902 10.4697 9.71967C10.329 9.86032 10.25 10.0511 10.25 10.25C10.25 10.4489 10.329 10.6397 10.4697 10.7803C10.6103 10.921 10.8011 11 11 11H14C14.1989 11 14.3897 10.921 14.5303 10.7803C14.671 10.6397 14.75 10.4489 14.75 10.25C14.75 10.0511 14.671 9.86032 14.5303 9.71967C14.3897 9.57902 14.1989 9.5 14 9.5ZM3.5 10C3.30109 10 3.11032 10.079 2.96967 10.2197C2.82902 10.3603 2.75 10.5511 2.75 10.75V13.5C2.75 13.6989 2.82902 13.8897 2.96967 14.0303C3.11032 14.171 3.30109 14.25 3.5 14.25C3.69891 14.25 3.88968 14.171 4.03033 14.0303C4.17098 13.8897 4.25 13.6989 4.25 13.5V10.75C4.25 10.5511 4.17098 10.3603 4.03033 10.2197C3.88968 10.079 3.69891 10 3.5 10ZM5 7.5H4.25V2.5C4.25 2.30109 4.17098 2.11032 4.03033 1.96967C3.88968 1.82902 3.69891 1.75 3.5 1.75C3.30109 1.75 3.11032 1.82902 2.96967 1.96967C2.82902 2.11032 2.75 2.30109 2.75 2.5V7.5H2C1.80109 7.5 1.61032 7.57902 1.46967 7.71967C1.32902 7.86032 1.25 8.05109 1.25 8.25C1.25 8.44891 1.32902 8.63968 1.46967 8.78033C1.61032 8.92098 1.80109 9 2 9H5C5.19891 9 5.38968 8.92098 5.53033 8.78033C5.67098 8.63968 5.75 8.44891 5.75 8.25C5.75 8.05109 5.67098 7.86032 5.53033 7.71967C5.38968 7.57902 5.19891 7.5 5 7.5ZM9.5 4.5H8.75V2.5C8.75 2.30109 8.67098 2.11032 8.53033 1.96967C8.38968 1.82902 8.19891 1.75 8 1.75C7.80109 1.75 7.61032 1.82902 7.46967 1.96967C7.32902 2.11032 7.25 2.30109 7.25 2.5V4.5H6.5C6.30109 4.5 6.11032 4.57902 5.96967 4.71967C5.82902 4.86032 5.75 5.05109 5.75 5.25C5.75 5.44891 5.82902 5.63968 5.96967 5.78033C6.11032 5.92098 6.30109 6 6.5 6H9.5C9.69891 6 9.88968 5.92098 10.0303 5.78033C10.171 5.63968 10.25 5.44891 10.25 5.25C10.25 5.05109 10.171 4.86032 10.0303 4.71967C9.88968 4.57902 9.69891 4.5 9.5 4.5Z" fill="black"/>
+      </svg>
+</div>
+<!-- modal -->
+<!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-filters">
+      <div class="modal-content modal-content-filters">
+
+      <!--  -->
+      <div class="casual-filters">
+        <div class="casual-filter d-flex justify-content-between align-items-center">
+            <span class="casual-filters__name ">Filters</span>
+            <svg class="casual-filters__icon hide-on-mobile-tablet" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                <path d="M13.125 12.125V20.75C13.125 21.0484 13.0065 21.3345 12.7955 21.5455C12.5845 21.7565 12.2984 21.875 12 21.875C11.7016 21.875 11.4155 21.7565 11.2045 21.5455C10.9935 21.3345 10.875 21.0484 10.875 20.75V12.125C10.875 11.8266 10.9935 11.5405 11.2045 11.3295C11.4155 11.1185 11.7016 11 12 11C12.2984 11 12.5845 11.1185 12.7955 11.3295C13.0065 11.5405 13.125 11.8266 13.125 12.125ZM18.75 18.5C18.4516 18.5 18.1655 18.6185 17.9545 18.8295C17.7435 19.0405 17.625 19.3266 17.625 19.625V20.75C17.625 21.0484 17.7435 21.3345 17.9545 21.5455C18.1655 21.7565 18.4516 21.875 18.75 21.875C19.0484 21.875 19.3345 21.7565 19.5455 21.5455C19.7565 21.3345 19.875 21.0484 19.875 20.75V19.625C19.875 19.3266 19.7565 19.0405 19.5455 18.8295C19.3345 18.6185 19.0484 18.5 18.75 18.5ZM21 14.75H19.875V4.25C19.875 3.95163 19.7565 3.66548 19.5455 3.4545C19.3345 3.24353 19.0484 3.125 18.75 3.125C18.4516 3.125 18.1655 3.24353 17.9545 3.4545C17.7435 3.66548 17.625 3.95163 17.625 4.25V14.75H16.5C16.2016 14.75 15.9155 14.8685 15.7045 15.0795C15.4935 15.2905 15.375 15.5766 15.375 15.875C15.375 16.1734 15.4935 16.4595 15.7045 16.6705C15.9155 16.8815 16.2016 17 16.5 17H21C21.2984 17 21.5845 16.8815 21.7955 16.6705C22.0065 16.4595 22.125 16.1734 22.125 15.875C22.125 15.5766 22.0065 15.2905 21.7955 15.0795C21.5845 14.8685 21.2984 14.75 21 14.75ZM5.25 15.5C4.95163 15.5 4.66548 15.6185 4.4545 15.8295C4.24353 16.0405 4.125 16.3266 4.125 16.625V20.75C4.125 21.0484 4.24353 21.3345 4.4545 21.5455C4.66548 21.7565 4.95163 21.875 5.25 21.875C5.54837 21.875 5.83452 21.7565 6.0455 21.5455C6.25647 21.3345 6.375 21.0484 6.375 20.75V16.625C6.375 16.3266 6.25647 16.0405 6.0455 15.8295C5.83452 15.6185 5.54837 15.5 5.25 15.5ZM7.5 11.75H6.375V4.25C6.375 3.95163 6.25647 3.66548 6.0455 3.4545C5.83452 3.24353 5.54837 3.125 5.25 3.125C4.95163 3.125 4.66548 3.24353 4.4545 3.4545C4.24353 3.66548 4.125 3.95163 4.125 4.25V11.75H3C2.70163 11.75 2.41548 11.8685 2.2045 12.0795C1.99353 12.2905 1.875 12.5766 1.875 12.875C1.875 13.1734 1.99353 13.4595 2.2045 13.6705C2.41548 13.8815 2.70163 14 3 14H7.5C7.79837 14 8.08452 13.8815 8.2955 13.6705C8.50647 13.4595 8.625 13.1734 8.625 12.875C8.625 12.5766 8.50647 12.2905 8.2955 12.0795C8.08452 11.8685 7.79837 11.75 7.5 11.75ZM14.25 7.25H13.125V4.25C13.125 3.95163 13.0065 3.66548 12.7955 3.4545C12.5845 3.24353 12.2984 3.125 12 3.125C11.7016 3.125 11.4155 3.24353 11.2045 3.4545C10.9935 3.66548 10.875 3.95163 10.875 4.25V7.25H9.75C9.45163 7.25 9.16548 7.36853 8.9545 7.5795C8.74353 7.79048 8.625 8.07663 8.625 8.375C8.625 8.67337 8.74353 8.95952 8.9545 9.1705C9.16548 9.38147 9.45163 9.5 9.75 9.5H14.25C14.5484 9.5 14.8345 9.38147 15.0455 9.1705C15.2565 8.95952 15.375 8.67337 15.375 8.375C15.375 8.07663 15.2565 7.79048 15.0455 7.5795C14.8345 7.36853 14.5484 7.25 14.25 7.25Z" fill="black" fill-opacity="0.4"/>
+              </svg>
+              <button type="button" class="hide-on-pc btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="line line-home-details__mobile "></div>
+        <ul class="casual-dressStyle-list ">
+            <li class="casual-dressStyle-item">
+                <a href="" class="casual-dressStyle__link">
+                    <span class="casual-dressStyle__link-name"> T-shirts
+                    </span>
+    
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+      <path d="M6.53073 2.46952L11.5307 7.46952C11.6007 7.5392 11.6561 7.622 11.694 7.71316C11.7318 7.80432 11.7513 7.90206 11.7513 8.00077C11.7513 8.09948 11.7318 8.19722 11.694 8.28839C11.6561 8.37955 11.6007 8.46235 11.5307 8.53202L6.53073 13.532C6.38984 13.6729 6.19874 13.7521 5.99948 13.7521C5.80023 13.7521 5.60913 13.6729 5.46823 13.532C5.32734 13.3911 5.24818 13.2 5.24818 13.0008C5.24818 12.8015 5.32734 12.6104 5.46823 12.4695L9.93761 8.00015L5.46761 3.53078C5.32671 3.38988 5.24756 3.19878 5.24756 2.99953C5.24756 2.80027 5.32671 2.60917 5.46761 2.46828C5.60851 2.32738 5.7996 2.24822 5.99886 2.24822C6.19812 2.24822 6.38921 2.32738 6.53011 2.46828L6.53073 2.46952Z" fill="black" fill-opacity="0.6"/>
+    </svg>
+                </a>
+            </li>
+            <li class="casual-dressStyle-item">
+                <a href="" class="casual-dressStyle__link">
+                    <span class="casual-dressStyle__link-name">
+                        Shorts
+                </span> 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+      <path d="M6.53073 2.46952L11.5307 7.46952C11.6007 7.5392 11.6561 7.622 11.694 7.71316C11.7318 7.80432 11.7513 7.90206 11.7513 8.00077C11.7513 8.09948 11.7318 8.19722 11.694 8.28839C11.6561 8.37955 11.6007 8.46235 11.5307 8.53202L6.53073 13.532C6.38984 13.6729 6.19874 13.7521 5.99948 13.7521C5.80023 13.7521 5.60913 13.6729 5.46823 13.532C5.32734 13.3911 5.24818 13.2 5.24818 13.0008C5.24818 12.8015 5.32734 12.6104 5.46823 12.4695L9.93761 8.00015L5.46761 3.53078C5.32671 3.38988 5.24756 3.19878 5.24756 2.99953C5.24756 2.80027 5.32671 2.60917 5.46761 2.46828C5.60851 2.32738 5.7996 2.24822 5.99886 2.24822C6.19812 2.24822 6.38921 2.32738 6.53011 2.46828L6.53073 2.46952Z" fill="black" fill-opacity="0.6"/>
+    </svg>
+                </a>
+            </li>
+            <li class="casual-dressStyle-item">
+                <a href="" class="casual-dressStyle__link">
+                    <span class="casual-dressStyle__link-name">
+                        Shirts
+                </span> 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+      <path d="M6.53073 2.46952L11.5307 7.46952C11.6007 7.5392 11.6561 7.622 11.694 7.71316C11.7318 7.80432 11.7513 7.90206 11.7513 8.00077C11.7513 8.09948 11.7318 8.19722 11.694 8.28839C11.6561 8.37955 11.6007 8.46235 11.5307 8.53202L6.53073 13.532C6.38984 13.6729 6.19874 13.7521 5.99948 13.7521C5.80023 13.7521 5.60913 13.6729 5.46823 13.532C5.32734 13.3911 5.24818 13.2 5.24818 13.0008C5.24818 12.8015 5.32734 12.6104 5.46823 12.4695L9.93761 8.00015L5.46761 3.53078C5.32671 3.38988 5.24756 3.19878 5.24756 2.99953C5.24756 2.80027 5.32671 2.60917 5.46761 2.46828C5.60851 2.32738 5.7996 2.24822 5.99886 2.24822C6.19812 2.24822 6.38921 2.32738 6.53011 2.46828L6.53073 2.46952Z" fill="black" fill-opacity="0.6"/>
+    </svg>
+                </a>
+            </li>
+            <li class="casual-dressStyle-item">
+                <a href="" class="casual-dressStyle__link">
+                    <span class="casual-dressStyle__link-name">
+                        Hoodie
+                </span> 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+      <path d="M6.53073 2.46952L11.5307 7.46952C11.6007 7.5392 11.6561 7.622 11.694 7.71316C11.7318 7.80432 11.7513 7.90206 11.7513 8.00077C11.7513 8.09948 11.7318 8.19722 11.694 8.28839C11.6561 8.37955 11.6007 8.46235 11.5307 8.53202L6.53073 13.532C6.38984 13.6729 6.19874 13.7521 5.99948 13.7521C5.80023 13.7521 5.60913 13.6729 5.46823 13.532C5.32734 13.3911 5.24818 13.2 5.24818 13.0008C5.24818 12.8015 5.32734 12.6104 5.46823 12.4695L9.93761 8.00015L5.46761 3.53078C5.32671 3.38988 5.24756 3.19878 5.24756 2.99953C5.24756 2.80027 5.32671 2.60917 5.46761 2.46828C5.60851 2.32738 5.7996 2.24822 5.99886 2.24822C6.19812 2.24822 6.38921 2.32738 6.53011 2.46828L6.53073 2.46952Z" fill="black" fill-opacity="0.6"/>
+    </svg>
+                </a>
+            </li>
+            <li class="casual-dressStyle-item">
+                <a href="" class="casual-dressStyle__link">
+                    <span class="casual-dressStyle__link-name">
+                        Jeans
+                </span> 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+      <path d="M6.53073 2.46952L11.5307 7.46952C11.6007 7.5392 11.6561 7.622 11.694 7.71316C11.7318 7.80432 11.7513 7.90206 11.7513 8.00077C11.7513 8.09948 11.7318 8.19722 11.694 8.28839C11.6561 8.37955 11.6007 8.46235 11.5307 8.53202L6.53073 13.532C6.38984 13.6729 6.19874 13.7521 5.99948 13.7521C5.80023 13.7521 5.60913 13.6729 5.46823 13.532C5.32734 13.3911 5.24818 13.2 5.24818 13.0008C5.24818 12.8015 5.32734 12.6104 5.46823 12.4695L9.93761 8.00015L5.46761 3.53078C5.32671 3.38988 5.24756 3.19878 5.24756 2.99953C5.24756 2.80027 5.32671 2.60917 5.46761 2.46828C5.60851 2.32738 5.7996 2.24822 5.99886 2.24822C6.19812 2.24822 6.38921 2.32738 6.53011 2.46828L6.53073 2.46952Z" fill="black" fill-opacity="0.6"/>
+    </svg>
+                </a>
+            </li>
+        </ul>
+
+
+    <div class="line line-home-details__mobile"></div>
+    <div class="casual-price">
+<div class="casuals-price__wrap d-flex justify-content-between align-items-center">
+<span class="casuals-price__name">Price</span>
+<svg class="casuals-price__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+<path d="M2.4694 9.96945L7.4694 4.96945C7.53908 4.89953 7.62187 4.84405 7.71304 4.8062C7.8042 4.76834 7.90194 4.74886 8.00065 4.74886C8.09936 4.74886 8.1971 4.76834 8.28827 4.8062C8.37943 4.84405 8.46222 4.89953 8.5319 4.96945L13.5319 9.96945C13.6728 10.1103 13.752 10.3014 13.752 10.5007C13.752 10.7 13.6728 10.8911 13.5319 11.0319C13.391 11.1728 13.1999 11.252 13.0007 11.252C12.8014 11.252 12.6103 11.1728 12.4694 11.0319L8.00003 6.56257L3.53065 11.0326C3.38976 11.1735 3.19866 11.2526 2.9994 11.2526C2.80015 11.2526 2.60905 11.1735 2.46815 11.0326C2.32726 10.8917 2.2481 10.7006 2.2481 10.5013C2.2481 10.3021 2.32726 10.111 2.46815 9.97007L2.4694 9.96945Z" fill="black"/>
+</svg>
+
+</div>
+
+<div id="slider-outer-div">  
+<div id="slider-div">
+<div class="w-100">
+<input id="ex2" type="text" data-slider-min="0"
+data-slider-max="1000" data-slider-value="[50,200]"
+data-slider-tooltip="hide" />
+</div>
+</div>
+<div id="slider-max-label" class="slider-label"></div>
+<div id="slider-min-label" class="slider-label"></div>
+</div>
+    </div>
+
+<div class="line line-home-details__mobile"></div>
+<div class="casual-colors">
+<div class="casual-colors__wrap">
+<span class="casual-colors__name">Colors</span>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+<path d="M2.4694 9.96945L7.4694 4.96945C7.53908 4.89953 7.62187 4.84405 7.71304 4.8062C7.8042 4.76834 7.90194 4.74886 8.00065 4.74886C8.09936 4.74886 8.1971 4.76834 8.28827 4.8062C8.37943 4.84405 8.46222 4.89953 8.5319 4.96945L13.5319 9.96945C13.6728 10.1103 13.752 10.3014 13.752 10.5007C13.752 10.7 13.6728 10.8911 13.5319 11.0319C13.391 11.1728 13.1999 11.252 13.0007 11.252C12.8014 11.252 12.6103 11.1728 12.4694 11.0319L8.00003 6.56257L3.53065 11.0326C3.38976 11.1735 3.19866 11.2526 2.9994 11.2526C2.80015 11.2526 2.60905 11.1735 2.46815 11.0326C2.32726 10.8917 2.2481 10.7006 2.2481 10.5013C2.2481 10.3021 2.32726 10.111 2.46815 9.97007L2.4694 9.96945Z" fill="black"/>
+</svg>
+</div>
+<div class="casual-colors__chooseColors-wrap row no-gutters">
+<div class="col c-2 l-2-4 casual-colors-chooseColor-wrap d-flex justify-content-center ">
+<div class="casual-colors__chooseColor casual-colors__chooseColor--green"></div>
+</div>
+<div class="col c-2 l-2-4 casual-colors-chooseColor-wrap d-flex justify-content-center ">
+<div class="casual-colors__chooseColor casual-colors__chooseColor--red"></div>
+</div>
+<div class="col c-2 l-2-4 casual-colors-chooseColor-wrap d-flex justify-content-center ">
+<div class="casual-colors__chooseColor casual-colors__chooseColor--yellow"></div>
+</div>
+<div class="col c-2 l-2-4 casual-colors-chooseColor-wrap d-flex justify-content-center ">
+<div class="casual-colors__chooseColor casual-colors__chooseColor--orange"></div>
+</div>
+<div class="col c-2 l-2-4 casual-colors-chooseColor-wrap d-flex justify-content-center ">
+<div class="casual-colors__chooseColor casual-colors__chooseColor--blue"></div>
+</div>
+<div class="col c-2 l-2-4 casual-colors-chooseColor-wrap d-flex justify-content-center ">
+<div class="casual-colors__chooseColor casual-colors__chooseColor--active casual-colors__chooseColor--darkBlue">
+<i class="casual-colors__chooseColor__icon--active fa-solid fa-check"></i>
+</div>
+
+</div>
+<div class="col c-2 l-2-4 casual-colors-chooseColor-wrap d-flex justify-content-center ">
+<div class="casual-colors__chooseColor casual-colors__chooseColor--purple"></div>
+</div>
+<div class="col c-2 l-2-4 casual-colors-chooseColor-wrap d-flex justify-content-center ">
+<div class="casual-colors__chooseColor casual-colors__chooseColor--pink"></div>
+</div>
+<div class="col c-2 l-2-4 casual-colors-chooseColor-wrap d-flex justify-content-center ">
+<div class="casual-colors__chooseColor casual-colors__chooseColor--white"></div>
+</div>
+<div class="col c-2 l-2-4 casual-colors-chooseColor-wrap d-flex justify-content-center ">
+<div class="casual-colors__chooseColor casual-colors__chooseColor--black"></div>
+</div>
+</div>
+</div>
+<div class="line line-home-details__mobile"></div>
+<!-- casual size begin -->
+<div class="casual-size">
+<div class="casual-size__wrap d-flex justify-content-between align-items-center">
+<span class="casual-size__name">Size</span>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+<path d="M2.4694 9.96945L7.4694 4.96945C7.53908 4.89953 7.62187 4.84405 7.71304 4.8062C7.8042 4.76834 7.90194 4.74886 8.00065 4.74886C8.09936 4.74886 8.1971 4.76834 8.28827 4.8062C8.37943 4.84405 8.46222 4.89953 8.5319 4.96945L13.5319 9.96945C13.6728 10.1103 13.752 10.3014 13.752 10.5007C13.752 10.7 13.6728 10.8911 13.5319 11.0319C13.391 11.1728 13.1999 11.252 13.0007 11.252C12.8014 11.252 12.6103 11.1728 12.4694 11.0319L8.00003 6.56257L3.53065 11.0326C3.38976 11.1735 3.19866 11.2526 2.9994 11.2526C2.80015 11.2526 2.60905 11.1735 2.46815 11.0326C2.32726 10.8917 2.2481 10.7006 2.2481 10.5013C2.2481 10.3021 2.32726 10.111 2.46815 9.97007L2.4694 9.96945Z" fill="black"/>
+</svg>
+</div>
+<div class="casual-size-chooseSize-wrap">
+<div class="casual-size__choseSize">XX-Small</div>
+<div class="casual-size__choseSize">X-Small</div>
+<div class="casual-size__choseSize">Small</div>
+<div class="casual-size__choseSize">Medium</div>
+<div class="casual-size__choseSize">Large</div>
+<div class="casual-size__choseSize">X-Large</div>
+<div class="casual-size__choseSize">XX-Large</div>
+<div class="casual-size__choseSize">3X-Large</div>
+<div class="casual-size__choseSize">4X-Large</div>
+</div>
+</div>
+<!-- casual size end -->
+<div class="line line-home-details__mobile"></div>
+<!-- dress style begin -->
+<div class="casual-dressStyle">
+<div class="casual-dressStyle-wrap d-flex justify-content-between align-items-center">
+<span class="casual-dressStyle__name">Dress Style</span>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+<path d="M2.4694 9.96939L7.4694 4.96939C7.53908 4.89947 7.62187 4.84399 7.71304 4.80614C7.8042 4.76828 7.90194 4.7488 8.00065 4.7488C8.09936 4.7488 8.1971 4.76828 8.28827 4.80614C8.37943 4.84399 8.46222 4.89947 8.5319 4.96939L13.5319 9.96939C13.6728 10.1103 13.752 10.3014 13.752 10.5006C13.752 10.6999 13.6728 10.891 13.5319 11.0319C13.391 11.1728 13.1999 11.2519 13.0007 11.2519C12.8014 11.2519 12.6103 11.1728 12.4694 11.0319L8.00003 6.56251L3.53065 11.0325C3.38976 11.1734 3.19866 11.2526 2.9994 11.2526C2.80015 11.2526 2.60905 11.1734 2.46815 11.0325C2.32726 10.8916 2.2481 10.7005 2.2481 10.5013C2.2481 10.302 2.32726 10.1109 2.46815 9.97001L2.4694 9.96939Z" fill="black"/>
+</svg>
+</div>
+<ul class="casual-dressStyle-list ">
+<li class="casual-dressStyle-item">
+<a href="" class="casual-dressStyle__link">
+    <span class="casual-dressStyle__link-name"> Casual
+    </span>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+<path d="M6.53073 2.46952L11.5307 7.46952C11.6007 7.5392 11.6561 7.622 11.694 7.71316C11.7318 7.80432 11.7513 7.90206 11.7513 8.00077C11.7513 8.09948 11.7318 8.19722 11.694 8.28839C11.6561 8.37955 11.6007 8.46235 11.5307 8.53202L6.53073 13.532C6.38984 13.6729 6.19874 13.7521 5.99948 13.7521C5.80023 13.7521 5.60913 13.6729 5.46823 13.532C5.32734 13.3911 5.24818 13.2 5.24818 13.0008C5.24818 12.8015 5.32734 12.6104 5.46823 12.4695L9.93761 8.00015L5.46761 3.53078C5.32671 3.38988 5.24756 3.19878 5.24756 2.99953C5.24756 2.80027 5.32671 2.60917 5.46761 2.46828C5.60851 2.32738 5.7996 2.24822 5.99886 2.24822C6.19812 2.24822 6.38921 2.32738 6.53011 2.46828L6.53073 2.46952Z" fill="black" fill-opacity="0.6"/>
+</svg>
+</a>
+</li>
+<li class="casual-dressStyle-item">
+<a href="" class="casual-dressStyle__link">
+    <span class="casual-dressStyle__link-name">
+        Formal
+</span> 
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+<path d="M6.53073 2.46952L11.5307 7.46952C11.6007 7.5392 11.6561 7.622 11.694 7.71316C11.7318 7.80432 11.7513 7.90206 11.7513 8.00077C11.7513 8.09948 11.7318 8.19722 11.694 8.28839C11.6561 8.37955 11.6007 8.46235 11.5307 8.53202L6.53073 13.532C6.38984 13.6729 6.19874 13.7521 5.99948 13.7521C5.80023 13.7521 5.60913 13.6729 5.46823 13.532C5.32734 13.3911 5.24818 13.2 5.24818 13.0008C5.24818 12.8015 5.32734 12.6104 5.46823 12.4695L9.93761 8.00015L5.46761 3.53078C5.32671 3.38988 5.24756 3.19878 5.24756 2.99953C5.24756 2.80027 5.32671 2.60917 5.46761 2.46828C5.60851 2.32738 5.7996 2.24822 5.99886 2.24822C6.19812 2.24822 6.38921 2.32738 6.53011 2.46828L6.53073 2.46952Z" fill="black" fill-opacity="0.6"/>
+</svg>
+</a>
+</li>
+<li class="casual-dressStyle-item">
+<a href="" class="casual-dressStyle__link">
+    <span class="casual-dressStyle__link-name">
+        Party
+</span> 
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+<path d="M6.53073 2.46952L11.5307 7.46952C11.6007 7.5392 11.6561 7.622 11.694 7.71316C11.7318 7.80432 11.7513 7.90206 11.7513 8.00077C11.7513 8.09948 11.7318 8.19722 11.694 8.28839C11.6561 8.37955 11.6007 8.46235 11.5307 8.53202L6.53073 13.532C6.38984 13.6729 6.19874 13.7521 5.99948 13.7521C5.80023 13.7521 5.60913 13.6729 5.46823 13.532C5.32734 13.3911 5.24818 13.2 5.24818 13.0008C5.24818 12.8015 5.32734 12.6104 5.46823 12.4695L9.93761 8.00015L5.46761 3.53078C5.32671 3.38988 5.24756 3.19878 5.24756 2.99953C5.24756 2.80027 5.32671 2.60917 5.46761 2.46828C5.60851 2.32738 5.7996 2.24822 5.99886 2.24822C6.19812 2.24822 6.38921 2.32738 6.53011 2.46828L6.53073 2.46952Z" fill="black" fill-opacity="0.6"/>
+</svg>
+</a>
+</li>
+<li class="casual-dressStyle-item">
+<a href="" class="casual-dressStyle__link">
+    <span class="casual-dressStyle__link-name">
+        Gym  
+</span> 
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+<path d="M6.53073 2.46952L11.5307 7.46952C11.6007 7.5392 11.6561 7.622 11.694 7.71316C11.7318 7.80432 11.7513 7.90206 11.7513 8.00077C11.7513 8.09948 11.7318 8.19722 11.694 8.28839C11.6561 8.37955 11.6007 8.46235 11.5307 8.53202L6.53073 13.532C6.38984 13.6729 6.19874 13.7521 5.99948 13.7521C5.80023 13.7521 5.60913 13.6729 5.46823 13.532C5.32734 13.3911 5.24818 13.2 5.24818 13.0008C5.24818 12.8015 5.32734 12.6104 5.46823 12.4695L9.93761 8.00015L5.46761 3.53078C5.32671 3.38988 5.24756 3.19878 5.24756 2.99953C5.24756 2.80027 5.32671 2.60917 5.46761 2.46828C5.60851 2.32738 5.7996 2.24822 5.99886 2.24822C6.19812 2.24822 6.38921 2.32738 6.53011 2.46828L6.53073 2.46952Z" fill="black" fill-opacity="0.6"/>
+</svg>
+</a>
+</li>
+</ul>
+</div>
+<!-- dress style end -->
+<button class="btn-applyFilters">Apply Filter</button>
+    </div>
+      <!--  -->
+        
+      </div>
+    </div>
+  </div>
+<!-- modal -->
+</div>
+<div class="row ">
+    <!--  no-gutters casual-row-product-->
+    <div class="col c-6 m-4 mg-0 l-4">    <a href="" class="home-product-item">
+            
+        <img class="home-product-item__img" src="./assets/img/details/ao-phong-trang-loang.png" alt="">
+
+        <h4 class="home-product-item__name">
+            Gradient Graphic T-shirt
+        </h4>
+        <div class="home-product-item__action">
+            <span class="home-product-item__star">
+                <i class="home-product-item__star-icon fa-solid fa-star"></i>
+                <i class="home-product-item__star-icon fa-solid fa-star"></i>
+                <i class="home-product-item__star-icon fa-solid fa-star"></i>
+                <i class="home-product-item__star-icon fa-solid fa-star-half"></i>
+
+            </span>
+            <div class="home-product-item__evaluate-wrap">
+                <div class="home-product-item__evaluate-wrap">
+                    <span class="home-product-item__evaluate">3.5/</span>
+                    <span class="home-product-item__evaluate home-product-item__evaluate--blur">5</span>
+                </div>
+            </div>
+        </div>
+        <div class="home-product-item__price">
+            <span class="home-product-item__price-real">$145</span>
+
+        </div>
+    </a></div>
+    <div class="col c-6 m-4 mg-0 l-4">     <a href="" class="home-product-item">
+            
+        <img class="home-product-item__img" src="./assets/img/details/polo-logo-cay-dua.png" alt="">
+
+        <h4 class="home-product-item__name">
+            Polo with Tipping Details
+        </h4>
+        <div class="home-product-item__action">
+            <span class="home-product-item__star">
+                <i class="home-product-item__star-icon fa-solid fa-star"></i>
+                <i class="home-product-item__star-icon fa-solid fa-star"></i>
+                <i class="home-product-item__star-icon fa-solid fa-star"></i>
+                <i class="home-product-item__star-icon fa-solid fa-star"></i>
+                <i class="home-product-item__star-icon fa-solid fa-star-half"></i>
+
+            </span>
+            <div class="home-product-item__evaluate-wrap">
+                <div class="home-product-item__evaluate-wrap">
+                    <span class="home-product-item__evaluate">4.5/</span>
+                    <span class="home-product-item__evaluate home-product-item__evaluate--blur">5</span>
+                </div>
+            </div>
+        </div>
+        <div class="home-product-item__price">
+            <span class="home-product-item__price-real">$180</span>
+        </div>
+    </a></div>
+    <div class="col c-6 m-4 mg-0 l-4">   <a href="" class="home-product-item">
+            
+        <img class="home-product-item__img" src="./assets/img/details/ao-phong-ke-den-trang.png" alt="">
+
+        <h4 class="home-product-item__name">
+            Black Striped T-shirt
+        </h4>
+        <div class="home-product-item__action">
+            <span class="home-product-item__star">
+                <i class="home-product-item__star-icon fa-solid fa-star"></i>
+                <i class="home-product-item__star-icon fa-solid fa-star"></i>
+                <i class="home-product-item__star-icon fa-solid fa-star"></i>
+                <i class="home-product-item__star-icon fa-solid fa-star"></i>
+                <i class="home-product-item__star-icon fa-solid fa-star"></i>
+              
+            </span>
+            <div class="home-product-item__evaluate-wrap">
+                <div class="home-product-item__evaluate-wrap">
+                    <span class="home-product-item__evaluate">5/0/</span>
+                    <span class="home-product-item__evaluate home-product-item__evaluate--blur">5</span>
+                </div>
+            </div>
+        </div>
+        <div class="home-product-item__price">
+            <span class="home-product-item__price-real">$120</span>
+            <span class="home-product-item__price-sale--blur">$150</span>
+            <div class="home-product-item__price-sale">
+                <span class="home-product-item__price--sale__price">-30%</span>
+            </div>
+        </div>
+    </a></div>
+    <div class="col c-6 m-4 mg-0 l-4">     <a href="" class="home-product-item">
+
+        <img class="home-product-item__img" src="./assets/img/home-product/quan-jean-xanh.png" alt="">
+
+        <h4 class="home-product-item__name">
+            SKINNY FIT JEANS
+        </h4>
+        <div class="home-product-item__action">
+            <span class="home-product-item__star">
+                <i class="home-product-item__star-icon fa-solid fa-star"></i>
+                <i class="home-product-item__star-icon fa-solid fa-star"></i>
+                <i class="home-product-item__star-icon fa-solid fa-star"></i>
+                <i class="home-product-item__star-icon fa-solid fa-star-half"></i>
+
+            </span>
+            <div class="home-product-item__evaluate-wrap">
+                <span class="home-product-item__evaluate">3.5/</span>
+                <span class=" home-product-item__evaluate home-product-item__evaluate--blur">5</span>
+            </div>
+        </div>
+        <div class="home-product-item__price">
+            <span class="home-product-item__price-real">$240</span>
+            <span class="home-product-item__price-sale--blur">$260</span>
+            <div class="home-product-item__price-sale">
+                <span class="home-product-item__price--sale__price">-20%</span>
+            </div>
+        </div>
+    </a></div>
+    <div class="col c-6 m-4 mg-0 l-4">    <a href="" class="home-product-item">
+
+        <img class="home-product-item__img" src="./assets/img/home-product/ao-so-mi-ke-do.png" alt="">
+
+        <h4 class="home-product-item__name">
+            CHECKERED SHIRT
+        </h4>
+        <div class="home-product-item__action">
+            <span class="home-product-item__star">
+                <i class="home-product-item__star-icon fa-solid fa-star"></i>
+                <i class="home-product-item__star-icon fa-solid fa-star"></i>
+                <i class="home-product-item__star-icon fa-solid fa-star"></i>
+                <i class="home-product-item__star-icon fa-solid fa-star"></i>
+                <i class="home-product-item__star-icon fa-solid fa-star-half"></i>
+
+            </span>
+            <div class="home-product-item__evaluate-wrap">
+                <span class="home-product-item__evaluate">4.5/</span>
+                <span class="home-product-item__evaluate home-product-item__evaluate--blur">5</span>
+            </div>
+        </div>
+        <div class="home-product-item__price">
+            <span class="home-product-item__price-real">$180</span>
+
+        </div>
+    </a></div>
+    <div class="col c-6 m-4 mg-0 l-4 ">  <a href="" class="home-product-item">
+
+        <img class="home-product-item__img" src="./assets/img/home-product/ao-phong-ke-den.png" alt="">
+
+        <h4 class="home-product-item__name">
+            SLEEVE STRIPED T-SHIRT
+        </h4>
+        <div class="home-product-item__action">
+            <span class="home-product-item__star">
+                <i class="home-product-item__star-icon fa-solid fa-star"></i>
+                <i class="home-product-item__star-icon fa-solid fa-star"></i>
+                <i class="home-product-item__star-icon fa-solid fa-star"></i>
+                <i class="home-product-item__star-icon fa-solid fa-star"></i>
+                <i class="home-product-item__star-icon fa-solid fa-star-half"></i>
+
+            </span>
+            <div class="home-product-item__evaluate-wrap">
+                <span class="home-product-item__evaluate">4.5/</span>
+                <span class="home-product-item__evaluate home-product-item__evaluate--blur">5</span>
+            </div>
+        </div>
+        <div class="home-product-item__price">
+            <span class="home-product-item__price-real">$130</span>
+            <span class="home-product-item__price-sale--blur">$160</span>
+            <div class="home-product-item__price-sale">
+                <span class="home-product-item__price--sale__price">-30%</span>
+            </div>
+        </div>
+    </a></div>
+    <div class="col c-6 m-4 mg-0 l-4 hide-on-mobile">   <a href="" class="home-product-item">
+
+        <img class="home-product-item__img" src="./assets/img/home-product/ao-so-mi-ke-xanh.png" alt="">
+
+        <h4 class="home-product-item__name">
+            VERTICAL STRIPED SHIRT
+        </h4>
+        <div class="home-product-item__action">
+            <span class="home-product-item__star">
+                <i class="home-product-item__star-icon fa-solid fa-star"></i>
+                <i class="home-product-item__star-icon fa-solid fa-star"></i>
+                <i class="home-product-item__star-icon fa-solid fa-star"></i>
+                <i class="home-product-item__star-icon fa-solid fa-star"></i>
+                <i class="home-product-item__star-icon fa-solid fa-star"></i>
+
+            </span>
+            <div class="home-product-item__evaluate-wrap">
+                <div class="home-product-item__evaluate-wrap">
+                    <span class="home-product-item__evaluate">5.0/</span>
+                    <span class="home-product-item__evaluate home-product-item__evaluate--blur">5</span>
+                </div>
+            </div>
+        </div>
+        <div class="home-product-item__price">
+            <span class="home-product-item__price-real">$212</span>
+            <span class="home-product-item__price-sale--blur">$232</span>
+            <div class="home-product-item__price-sale">
+                <span class="home-product-item__price--sale__price">-20%</span>
+            </div>
+        </div>
+    </a></div>
+    <div class="col c-6 m-4 mg-0 l-4 hide-on-mobile"><a href="" class="home-product-item">
+
+        <img class="home-product-item__img" src="./assets/img/home-product/ao-phong-cam.png" alt="">
+
+        <h4 class="home-product-item__name">
+            COURAGE GRAPHIC T-SHIRT
+        </h4>
+        <div class="home-product-item__action">
+            <span class="home-product-item__star">
+                <i class="home-product-item__star-icon fa-solid fa-star"></i>
+                <i class="home-product-item__star-icon fa-solid fa-star"></i>
+                <i class="home-product-item__star-icon fa-solid fa-star"></i>
+                <i class="home-product-item__star-icon fa-solid fa-star"></i>
+            </span>
+            <div class="home-product-item__evaluate-wrap">
+                <div class="home-product-item__evaluate-wrap">
+                    <span class="home-product-item__evaluate">4.0/</span>
+                    <span class="home-product-item__evaluate home-product-item__evaluate--blur">5</span>
+                </div>
+            </div>
+        </div>
+        <div class="home-product-item__price">
+            <span class="home-product-item__price-real">$145</span>
+
+        </div>
+    </a></div>
+    <div class="col c-6 m-4 mg-0 l-4 hide-on-mobile"> <a href="" class="home-product-item">
+
+        <img class="home-product-item__img" src="./assets/img/home-product/quan-ngo-jean-xanh.png" alt="">
+
+        <h4 class="home-product-item__name">
+            LOOSE FIT BERMUDA SHORTS
+        </h4>
+        <div class="home-product-item__action">
+            <span class="home-product-item__star">
+                <i class="home-product-item__star-icon fa-solid fa-star"></i>
+                <i class="home-product-item__star-icon fa-solid fa-star"></i>
+                <i class="home-product-item__star-icon fa-solid fa-star"></i>
+            </span>
+            <div class="home-product-item__evaluate-wrap">
+                <div class="home-product-item__evaluate-wrap">
+                    <span class="home-product-item__evaluate">3.0/</span>
+                    <span class="home-product-item__evaluate home-product-item__evaluate--blur">5</span>
+                </div>
+            </div>
+        </div>
+        <div class="home-product-item__price">
+            <span class="home-product-item__price-real">$80</span>
+        </div>
+    </a></div>
+</div>
+<div class="line line-home-details__mobile"></div>
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-between align-items-center">
+      <li class="page-item"><a class="page-link" href="#"><i class="pagination-icon-arrow-left fa-solid fa-arrow-left"></i>
+        Previous</a></li>
+      <div class="page-item__wrap d-flex">
+        <li class="page-item"><a class="page-link page-link--active" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item hide-on-mobile"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">...</a></li>
+        <li class="page-item hide-on-mobile"><a class="page-link" href="#">8</a></li>
+        <li class="page-item"><a class="page-link" href="#">9</a></li>
+        <li class="page-item"><a class="page-link" href="#">10</a></li>
+      </div>
+      
+      <li class="page-item"><a class="page-link" href="#">Next
+        <i class="pagination-icon-arrow-right fa-solid fa-arrow-right"></i>
+      </a></li>
+    </ul>
+  </nav>
+            </div>
+            <!-- col right end -->
+
+         </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="grid wide position-relative">
+        <!--  -->
+        <div class="footer-contact">
+
+            <div class="row">
+                <div class="col c-12 m-12 l-6">
+                    <h1 class="footer-contact__title">
+                        STAY UPTO DATE ABOUT OUR LATEST OFFERS
+                    </h1>
+                </div>
+                <div class="col c-12 m-12 l-6 d-flex justify-content-center align-items-center">
+                    <div class="footer-contact__form">
+                        <div class="footer-contact__wrap">
+                            <div class="footer-contact__emailIcon"></div>
+                            <input type="text" placeholder="Enter your email address" class="footer-contact__input">
+                        </div>
+
+                        <button class="footer-contact__btn">Subscribe to Newsletter</button>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-info">
+            <div class="row">
+                <div class="col l-4 c-12 m-12">
+                    <h1 class="footer-info__title">SHOP.CO</h1>
+
+                    <p class="footer-info__sub-tile">We have clothes that suits your style and which you’re proud to
+                        wear. From women to men. </p>
+                    <div class="footer-info__socials">
+                        <a class="footer-info__socials-link" href="">
+                            <i class="footer-info__socials-icon fa-brands fa-twitter"></i>
+                        </a>
+                        <!--  -->
+                        <a class="footer-info__socials-link" href="">
+                            <i class="footer-info__socials-icon fa-brands fa-facebook"></i>
+                        </a>
+                        <!--  -->
+                        <a class="footer-info__socials-link" href="">
+                            <i class="footer-info__socials-icon fa-brands fa-instagram"></i>
+                        </a>
+                        <!--  -->
+                        <a class="footer-info__socials-link" href="">
+                            <i class="footer-info__socials-icon fa-brands fa-github"></i>
+                        </a>
+                        <!--  -->
+
+                    </div>
+                </div>
+                <div class="col l-2 c-6 m-6 ">
+                    <h2 class="footer-info__menu-name">
+                        COMPANY
+                    </h2>
+                    <ul class="footer-info__list">
+                        <li class="footer-info__item">
+                            <a href="" class="footer-info__item-link">About</a>
+                        </li>
+                        <li class="footer-info__item">
+                            <a href="" class="footer-info__item-link">Features</a>
+                        </li>
+                        <li class="footer-info__item">
+                            <a href="" class="footer-info__item-link">Works</a>
+                        </li>
+                        <li class="footer-info__item">
+                            <a href="" class="footer-info__item-link">Career</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col l-2 c-6 m-6">
+                    <h2 class="footer-info__menu-name">
+                        Help
+                    </h2>
+                    <ul class="footer-info__list">
+                        <li class="footer-info__item">
+                            <a href="" class="footer-info__item-link">Customer Support</a>
+                        </li>
+                        <li class="footer-info__item">
+                            <a href="" class="footer-info__item-link">Delivery Details </a>
+                        </li>
+                        <li class="footer-info__item">
+                            <a href="" class="footer-info__item-link">Terms & Conditions</a>
+                        </li>
+                        <li class="footer-info__item">
+                            <a href="" class="footer-info__item-link">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col l-2 c-6 m-6">
+                    <h2 class="footer-info__menu-name">
+                        FAQ
+                    </h2>
+                    <ul class="footer-info__list">
+                        <li class="footer-info__item">
+                            <a href="" class="footer-info__item-link">Account</a>
+                        </li>
+                        <li class="footer-info__item">
+                            <a href="" class="footer-info__item-link"> Manage Deliveries </a>
+                        </li>
+                        <li class="footer-info__item">
+                            <a href="" class="footer-info__item-link">Orders</a>
+                        </li>
+                        <li class="footer-info__item">
+                            <a href="" class="footer-info__item-link">Payments</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col l-2 c-6 m-6">
+                    <h2 class="footer-info__menu-name">
+                        Resources
+                    </h2>
+                    <ul class="footer-info__list">
+                        <li class="footer-info__item">
+                            <a href="" class="footer-info__item-link">Free eBooks</a>
+                        </li>
+                        <li class="footer-info__item">
+                            <a href="" class="footer-info__item-link">Development Tutorial</a>
+                        </li>
+                        <li class="footer-info__item">
+                            <a href="" class="footer-info__item-link">How to - Blog</a>
+                        </li>
+                        <li class="footer-info__item">
+                            <a href="" class="footer-info__item-link">Youtube Playlist</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--  -->
+        <div class="line"></div>
+        <div class="row footer-copyright">
+            <div class="col c-12 m-6 l-6">
+                <p class="footer-copyright__text">
+                    Shop.co © 2000-2023, All Rights Reserved
+                </p>
+            </div>
+            <!--  -->
+            <div class="col c-12 m-6 l-6">
+                <ul class="footer-copyright__list">
+                    <li class="footer-copyright__item">
+                        <a href="" class="footer-copyright__link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="66" height="49" viewBox="0 0 66 49"
+                                fill="none">
+                                <g filter="url(#filter0_dd_20_320)">
+                                    <rect x="10" y="5" width="46.6143" height="30.0304" rx="5.37857" fill="white" />
+                                    <rect x="9.88795" y="4.88795" width="46.8384" height="30.2545" rx="5.49062"
+                                        stroke="#D6DCE5" stroke-width="0.224107" />
+                                    <path
+                                        d="M33.0221 15.121L30.8479 25.2845H28.2188L30.3933 15.121H33.0221ZM44.0838 21.6836L45.468 17.8669L46.2645 21.6836H44.0838ZM47.0172 25.2845H49.4491L47.327 15.121H45.0823C44.5779 15.121 44.1523 15.4144 43.9628 15.8667L40.0184 25.2845H42.7794L43.3275 23.7668H46.7007L47.0172 25.2845ZM40.1554 21.9661C40.1667 19.2836 36.4458 19.1359 36.4715 17.9376C36.4792 17.5725 36.827 17.1852 37.5865 17.0858C37.9638 17.0366 39.0012 16.999 40.1792 17.541L40.6405 15.3857C40.0078 15.1561 39.1936 14.9351 38.1809 14.9351C35.5824 14.9351 33.7533 16.3167 33.7379 18.295C33.7215 19.758 35.0436 20.5745 36.0398 21.0609C37.0641 21.5591 37.4083 21.8782 37.4038 22.3238C37.397 23.0061 36.5867 23.3065 35.8307 23.3184C34.5086 23.3393 33.7414 22.9617 33.1299 22.6767L32.6535 24.9037C33.2676 25.1858 34.4015 25.4309 35.5779 25.4435C38.3395 25.4435 40.1464 24.0789 40.1554 21.9661ZM29.2652 15.121L25.0055 25.2845H22.2258L20.1298 17.1733C20.0024 16.6738 19.8917 16.491 19.5047 16.2803C18.8733 15.9377 17.8294 15.6157 16.911 15.4163L16.9737 15.121H21.4474C22.0174 15.121 22.5305 15.5006 22.6598 16.1571L23.767 22.0388L26.5029 15.121H29.2652Z"
+                                        fill="#1434CB" />
+                                </g>
+                                <defs>
+                                    <filter id="filter0_dd_20_320" x="0.811593" y="0.293736" width="64.9911"
+                                        height="48.4071" filterUnits="userSpaceOnUse"
+                                        color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                        <feOffset dy="0.448214" />
+                                        <feGaussianBlur stdDeviation="2.24107" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 0.717647 0 0 0 0 0.717647 0 0 0 0 0.717647 0 0 0 0.08 0" />
+                                        <feBlend mode="normal" in2="BackgroundImageFix"
+                                            result="effect1_dropShadow_20_320" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                        <feOffset dy="4.48214" />
+                                        <feGaussianBlur stdDeviation="4.48214" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 0.717647 0 0 0 0 0.717647 0 0 0 0 0.717647 0 0 0 0.08 0" />
+                                        <feBlend mode="normal" in2="effect1_dropShadow_20_320"
+                                            result="effect2_dropShadow_20_320" />
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_20_320"
+                                            result="shape" />
+                                    </filter>
+                                </defs>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-copyright__item">
+                        <a href="" class="footer-copyright__link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="66" height="49" viewBox="0 0 66 49"
+                                fill="none">
+                                <g filter="url(#filter0_dd_20_322)">
+                                    <rect x="9.61426" y="5" width="46.6143" height="30.0304" rx="5.37857"
+                                        fill="white" />
+                                    <rect x="9.5022" y="4.88795" width="46.8384" height="30.2545" rx="5.49062"
+                                        stroke="#D6DCE5" stroke-width="0.224107" />
+                                    <path d="M36.2699 13.8484H29.4066V26.1819H36.2699V13.8484Z" fill="#FF5F00" />
+                                    <path
+                                        d="M29.8425 20.0151C29.8414 18.8273 30.1105 17.6548 30.6296 16.5864C31.1486 15.518 31.9039 14.5817 32.8383 13.8484C31.6812 12.9389 30.2915 12.3732 28.8282 12.2162C27.3648 12.0591 25.8867 12.3169 24.563 12.9602C23.2392 13.6034 22.1231 14.6061 21.3423 15.8537C20.5614 17.1013 20.1473 18.5434 20.1473 20.0151C20.1473 21.4869 20.5614 22.929 21.3423 24.1766C22.1231 25.4241 23.2392 26.4269 24.563 27.0701C25.8867 27.7133 27.3648 27.9712 28.8282 27.8141C30.2915 27.657 31.6812 27.0914 32.8383 26.1819C31.9039 25.4485 31.1486 24.5122 30.6296 23.4438C30.1105 22.3754 29.8414 21.2029 29.8425 20.0151Z"
+                                        fill="#EB001B" />
+                                    <path
+                                        d="M45.5289 20.0151C45.5289 21.4869 45.1149 22.929 44.3341 24.1765C43.5533 25.4241 42.4372 26.4268 41.1135 27.0701C39.7897 27.7133 38.3117 27.9712 36.8484 27.8141C35.385 27.657 33.9954 27.0914 32.8383 26.1819C33.7719 25.4478 34.5266 24.5113 35.0455 23.4431C35.5645 22.3749 35.8341 21.2028 35.8341 20.0151C35.8341 18.8275 35.5645 17.6554 35.0455 16.5872C34.5266 15.5189 33.7719 14.5825 32.8383 13.8484C33.9954 12.9389 35.385 12.3732 36.8484 12.2162C38.3117 12.0591 39.7897 12.3169 41.1135 12.9602C42.4372 13.6034 43.5533 14.6062 44.3341 15.8537C45.1149 17.1013 45.5289 18.5434 45.5289 20.0151Z"
+                                        fill="#F79E1B" />
+                                    <path
+                                        d="M44.7805 24.8756V24.6231H44.8824V24.5716H44.6231V24.6231H44.7249V24.8756H44.7805ZM45.284 24.8756V24.5711H45.2045L45.1131 24.7805L45.0216 24.5711H44.9421V24.8756H44.9982V24.6459L45.0839 24.8439H45.1421L45.2279 24.6454V24.8756H45.284Z"
+                                        fill="#F79E1B" />
+                                </g>
+                                <defs>
+                                    <filter id="filter0_dd_20_322" x="0.425851" y="0.293736" width="64.9911"
+                                        height="48.4071" filterUnits="userSpaceOnUse"
+                                        color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                        <feOffset dy="0.448214" />
+                                        <feGaussianBlur stdDeviation="2.24107" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 0.717647 0 0 0 0 0.717647 0 0 0 0 0.717647 0 0 0 0.08 0" />
+                                        <feBlend mode="normal" in2="BackgroundImageFix"
+                                            result="effect1_dropShadow_20_322" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                        <feOffset dy="4.48214" />
+                                        <feGaussianBlur stdDeviation="4.48214" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 0.717647 0 0 0 0 0.717647 0 0 0 0 0.717647 0 0 0 0.08 0" />
+                                        <feBlend mode="normal" in2="effect1_dropShadow_20_322"
+                                            result="effect2_dropShadow_20_322" />
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_20_322"
+                                            result="shape" />
+                                    </filter>
+                                </defs>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-copyright__item">
+                        <a href="" class="footer-copyright__link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="66" height="49" viewBox="0 0 66 49"
+                                fill="none">
+                                <g filter="url(#filter0_dd_20_324)">
+                                    <rect x="9.22852" y="5" width="46.6143" height="30.0304" rx="5.37857"
+                                        fill="white" />
+                                    <rect x="9.11646" y="4.88795" width="46.8384" height="30.2545" rx="5.49062"
+                                        stroke="#D6DCE5" stroke-width="0.224107" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M19.4257 15.646H16.7382C16.5543 15.646 16.3979 15.7796 16.3692 15.9611L15.2822 22.8518C15.2606 22.9879 15.3659 23.1104 15.5039 23.1104H16.7869C16.9708 23.1104 17.1272 22.9768 17.1559 22.7949L17.4491 20.9364C17.4774 20.7544 17.6342 20.6209 17.8177 20.6209H18.6685C20.4388 20.6209 21.4605 19.7643 21.7274 18.0669C21.8476 17.3243 21.7325 16.7408 21.3846 16.332C21.0027 15.8835 20.3251 15.646 19.4257 15.646ZM19.7358 18.1627C19.5888 19.127 18.852 19.127 18.1395 19.127H17.734L18.0185 17.3261C18.0354 17.2174 18.1297 17.1372 18.2397 17.1372H18.4256C18.9109 17.1372 19.3688 17.1372 19.6054 17.4138C19.7463 17.5789 19.7896 17.824 19.7358 18.1627ZM27.4593 18.1318H26.1723C26.0626 18.1318 25.9679 18.212 25.951 18.3209L25.8941 18.6808L25.804 18.5504C25.5254 18.146 24.9042 18.0109 24.2841 18.0109C22.8618 18.0109 21.6472 19.0879 21.4106 20.5988C21.2877 21.3523 21.4625 22.0729 21.89 22.5755C22.2823 23.0375 22.8435 23.2301 23.511 23.2301C24.6569 23.2301 25.2925 22.4933 25.2925 22.4933L25.235 22.8509C25.2134 22.9877 25.3187 23.1102 25.4558 23.1102H26.6151C26.7995 23.1102 26.955 22.9766 26.9841 22.7948L27.6797 18.3904C27.7017 18.2549 27.5968 18.1318 27.4593 18.1318ZM25.6653 20.6364C25.5411 21.3715 24.9575 21.865 24.2134 21.865C23.8397 21.865 23.5409 21.7452 23.3492 21.5181C23.159 21.2926 23.0866 20.9715 23.1472 20.614C23.2632 19.8851 23.8566 19.3756 24.5894 19.3756C24.9548 19.3756 25.2519 19.4968 25.4476 19.726C25.6436 19.9574 25.7215 20.2804 25.6653 20.6364ZM33.0202 18.1317H34.3135C34.4947 18.1317 34.6003 18.3348 34.4974 18.4833L30.196 24.6914C30.1263 24.792 30.0116 24.8518 29.889 24.8518H28.5973C28.4155 24.8518 28.3093 24.6471 28.4146 24.4982L29.7539 22.6078L28.3294 18.4279C28.2802 18.2826 28.3875 18.1317 28.542 18.1317H29.8128C29.978 18.1317 30.1236 18.24 30.1713 18.398L30.9272 20.9226L32.711 18.2955C32.7809 18.1929 32.8969 18.1317 33.0202 18.1317Z"
+                                        fill="#253B80" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M47.0427 22.8512L48.1457 15.8345C48.1626 15.7256 48.257 15.6454 48.3666 15.645H49.6083C49.7455 15.645 49.8507 15.7679 49.8291 15.9039L48.7414 22.7943C48.7131 22.9762 48.5567 23.1098 48.3725 23.1098H47.2635C47.1264 23.1098 47.0211 22.9872 47.0427 22.8512ZM38.5958 15.6454H35.9078C35.7243 15.6454 35.5679 15.779 35.5392 15.9605L34.4523 22.8512C34.4306 22.9872 34.5359 23.1098 34.6732 23.1098H36.0524C36.1806 23.1098 36.2903 23.0163 36.3103 22.8891L36.6187 20.9358C36.6471 20.7538 36.8038 20.6203 36.9873 20.6203H37.8377C39.6084 20.6203 40.6298 19.7637 40.897 18.0663C41.0176 17.3237 40.9017 16.7402 40.554 16.3314C40.1723 15.8829 39.4953 15.6454 38.5958 15.6454ZM38.9059 18.1621C38.7593 19.1264 38.0224 19.1264 37.3096 19.1264H36.9044L37.1893 17.3255C37.2063 17.2168 37.2997 17.1366 37.4101 17.1366H37.596C38.081 17.1366 38.5393 17.1366 38.7757 17.4132C38.9168 17.5783 38.9597 17.8234 38.9059 18.1621ZM46.6287 18.1312H45.3426C45.232 18.1312 45.1382 18.2114 45.1216 18.3203L45.0647 18.6802L44.9743 18.5498C44.6957 18.1454 44.0749 18.0103 43.4548 18.0103C42.0325 18.0103 40.8182 19.0873 40.5817 20.5981C40.4591 21.3517 40.6331 22.0723 41.0607 22.5748C41.4536 23.0369 42.0141 23.2294 42.6817 23.2294C43.8276 23.2294 44.463 22.4927 44.463 22.4927L44.4057 22.8503C44.384 22.9871 44.4893 23.1096 44.6274 23.1096H45.7861C45.9696 23.1096 46.126 22.976 46.1548 22.7941L46.8507 18.3898C46.872 18.2543 46.7667 18.1312 46.6287 18.1312ZM44.8349 20.6358C44.7114 21.3709 44.1271 21.8644 43.3828 21.8644C43.0098 21.8644 42.7104 21.7446 42.5186 21.5175C42.3284 21.292 42.2569 20.9709 42.3167 20.6134C42.4333 19.8845 43.026 19.375 43.7588 19.375C44.1243 19.375 44.4213 19.4962 44.6172 19.7253C44.8139 19.9568 44.8918 20.2798 44.8349 20.6358Z"
+                                        fill="#179BD7" />
+                                </g>
+                                <defs>
+                                    <filter id="filter0_dd_20_324" x="0.0401087" y="0.293736" width="64.9911"
+                                        height="48.4071" filterUnits="userSpaceOnUse"
+                                        color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                        <feOffset dy="0.448214" />
+                                        <feGaussianBlur stdDeviation="2.24107" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 0.717647 0 0 0 0 0.717647 0 0 0 0 0.717647 0 0 0 0.08 0" />
+                                        <feBlend mode="normal" in2="BackgroundImageFix"
+                                            result="effect1_dropShadow_20_324" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                        <feOffset dy="4.48214" />
+                                        <feGaussianBlur stdDeviation="4.48214" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 0.717647 0 0 0 0 0.717647 0 0 0 0 0.717647 0 0 0 0.08 0" />
+                                        <feBlend mode="normal" in2="effect1_dropShadow_20_324"
+                                            result="effect2_dropShadow_20_324" />
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_20_324"
+                                            result="shape" />
+                                    </filter>
+                                </defs>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-copyright__item">
+                        <a href="" class="footer-copyright__link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="66" height="49" viewBox="0 0 66 49"
+                                fill="none">
+                                <g filter="url(#filter0_dd_20_326)">
+                                    <rect x="9.8429" y="5" width="46.6143" height="30.0304" rx="5.37857" fill="white" />
+                                    <rect x="9.73084" y="4.88795" width="46.8384" height="30.2545" rx="5.49062"
+                                        stroke="#D6DCE5" stroke-width="0.224107" />
+                                    <path
+                                        d="M24.9199 16.0817C25.2309 15.6927 25.4419 15.1704 25.3863 14.6367C24.931 14.6594 24.3755 14.9371 24.0538 15.3264C23.7651 15.6597 23.5095 16.2039 23.5761 16.7152C24.0871 16.7595 24.5977 16.4598 24.9199 16.0817Z"
+                                        fill="#000008" />
+                                    <path
+                                        d="M25.3805 16.8151C24.6383 16.7709 24.0073 17.2363 23.6529 17.2363C23.2983 17.2363 22.7556 16.8373 22.1686 16.8481C21.4045 16.8593 20.6956 17.2913 20.3079 17.9784C19.5105 19.3528 20.0975 21.3916 20.8729 22.511C21.2495 23.0648 21.7034 23.6746 22.3014 23.6527C22.8664 23.6305 23.0879 23.2868 23.7747 23.2868C24.461 23.2868 24.6605 23.6527 25.2587 23.6416C25.8789 23.6305 26.2667 23.0875 26.6433 22.5332C27.0753 21.9019 27.2522 21.2923 27.2633 21.2588C27.2522 21.2477 26.0672 20.7932 26.0562 19.4302C26.0451 18.2889 26.9865 17.746 27.0309 17.7123C26.4992 16.926 25.6685 16.8373 25.3805 16.8151Z"
+                                        fill="#000008" />
+                                    <path
+                                        d="M31.8425 15.2705C33.4556 15.2705 34.5788 16.3824 34.5788 18.0013C34.5788 19.6259 33.4325 20.7435 31.8021 20.7435H30.0161V23.5837H28.7258V15.2705L31.8425 15.2705ZM30.0161 19.6604H31.4967C32.6202 19.6604 33.2596 19.0556 33.2596 18.007C33.2596 16.9586 32.6202 16.3594 31.5025 16.3594H30.0161V19.6604Z"
+                                        fill="#000008" />
+                                    <path
+                                        d="M34.9159 21.8612C34.9159 20.8011 35.7283 20.1501 37.1686 20.0695L38.8277 19.9716V19.505C38.8277 18.8309 38.3725 18.4276 37.6122 18.4276C36.8919 18.4276 36.4426 18.7732 36.3332 19.3148H35.158C35.2271 18.2201 36.1603 17.4136 37.6582 17.4136C39.1273 17.4136 40.0663 18.1914 40.0663 19.4069V23.5837H38.8737V22.5871H38.845C38.4937 23.2611 37.7274 23.6874 36.9324 23.6874C35.7456 23.6874 34.9159 22.95 34.9159 21.8612ZM38.8277 21.3139V20.8358L37.3355 20.9279C36.5923 20.9798 36.1719 21.3081 36.1719 21.8266C36.1719 22.3566 36.6097 22.7023 37.278 22.7023C38.1478 22.7023 38.8277 22.1031 38.8277 21.3139Z"
+                                        fill="#000008" />
+                                    <path
+                                        d="M41.1922 25.8133V24.8051C41.2842 24.8281 41.4915 24.8281 41.5953 24.8281C42.1714 24.8281 42.4825 24.5861 42.6725 23.964C42.6725 23.9524 42.7821 23.5953 42.7821 23.5895L40.593 17.5231H41.9409L43.4735 22.4546H43.4964L45.029 17.5231H46.3425L44.0724 23.9005C43.5542 25.3697 42.955 25.8421 41.6991 25.8421C41.5953 25.8421 41.2842 25.8305 41.1922 25.8133Z"
+                                        fill="#000008" />
+                                </g>
+                                <defs>
+                                    <filter id="filter0_dd_20_326" x="0.654489" y="0.293736" width="64.9911"
+                                        height="48.4071" filterUnits="userSpaceOnUse"
+                                        color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                        <feOffset dy="0.448214" />
+                                        <feGaussianBlur stdDeviation="2.24107" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 0.717647 0 0 0 0 0.717647 0 0 0 0 0.717647 0 0 0 0.08 0" />
+                                        <feBlend mode="normal" in2="BackgroundImageFix"
+                                            result="effect1_dropShadow_20_326" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                        <feOffset dy="4.48214" />
+                                        <feGaussianBlur stdDeviation="4.48214" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 0.717647 0 0 0 0 0.717647 0 0 0 0 0.717647 0 0 0 0.08 0" />
+                                        <feBlend mode="normal" in2="effect1_dropShadow_20_326"
+                                            result="effect2_dropShadow_20_326" />
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_20_326"
+                                            result="shape" />
+                                    </filter>
+                                </defs>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-copyright__item">
+                        <a href="" class="footer-copyright__link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="66" height="49" viewBox="0 0 66 49"
+                                fill="none">
+                                <g filter="url(#filter0_dd_20_328)">
+                                    <rect x="9.45715" y="5" width="46.6143" height="30.0304" rx="5.37857"
+                                        fill="white" />
+                                    <rect x="9.3451" y="4.88795" width="46.8384" height="30.2545" rx="5.49062"
+                                        stroke="#D6DCE5" stroke-width="0.224107" />
+                                    <path
+                                        d="M31.751 23.6143H30.7025V15.4561H33.482C34.1864 15.4561 34.7871 15.6909 35.2785 16.1605C35.7809 16.6301 36.0321 17.2035 36.0321 17.8806C36.0321 18.5741 35.7809 19.1475 35.2785 19.6116C34.7925 20.0758 34.1919 20.3051 33.482 20.3051H31.751V23.6143ZM31.751 16.4608V19.3058H33.5038C33.9188 19.3058 34.2683 19.1639 34.5414 18.8854C34.8198 18.6069 34.9618 18.2683 34.9618 17.8861C34.9618 17.5093 34.8198 17.1762 34.5414 16.8977C34.2683 16.6083 33.9243 16.4663 33.5038 16.4663H31.751V16.4608Z"
+                                        fill="#3C4043" />
+                                    <path
+                                        d="M38.7732 17.8478C39.5487 17.8478 40.1603 18.0553 40.608 18.4703C41.0558 18.8854 41.2797 19.4533 41.2797 20.1741V23.6143H40.2804V22.8389H40.2367C39.8053 23.4778 39.2265 23.7945 38.5057 23.7945C37.8886 23.7945 37.3753 23.6143 36.9603 23.2484C36.5453 22.8826 36.3378 22.4293 36.3378 21.8833C36.3378 21.3044 36.5562 20.8457 36.9931 20.5072C37.4299 20.1632 38.0142 19.9939 38.7405 19.9939C39.363 19.9939 39.8763 20.1085 40.2749 20.3379V20.0976C40.2749 19.7318 40.1329 19.426 39.8435 19.1693C39.5541 18.9127 39.2156 18.7871 38.8279 18.7871C38.2436 18.7871 37.7794 19.0328 37.4408 19.5297L36.518 18.9509C37.0258 18.2137 37.7794 17.8478 38.7732 17.8478ZM37.419 21.8996C37.419 22.1727 37.5337 22.402 37.7685 22.5822C37.9978 22.7624 38.2709 22.8553 38.5821 22.8553C39.0244 22.8553 39.4176 22.6914 39.7616 22.3638C40.1056 22.0362 40.2804 21.6539 40.2804 21.2116C39.9527 20.955 39.4995 20.8239 38.9152 20.8239C38.4893 20.8239 38.1343 20.9276 37.8504 21.1297C37.561 21.3427 37.419 21.5993 37.419 21.8996Z"
+                                        fill="#3C4043" />
+                                    <path
+                                        d="M46.9807 18.0281L43.4858 26.0662H42.4046L43.7043 23.2539L41.3999 18.0281H42.5412L44.2012 22.0362H44.223L45.8394 18.0281H46.9807Z"
+                                        fill="#3C4043" />
+                                    <path
+                                        d="M27.5806 19.6444C27.5806 19.3026 27.55 18.9755 27.4932 18.6609H23.0985V20.4629L25.6295 20.4635C25.5268 21.0631 25.1965 21.5742 24.6903 21.9149V23.0841H26.1969C27.0766 22.2699 27.5806 21.0664 27.5806 19.6444Z"
+                                        fill="#4285F4" />
+                                    <path
+                                        d="M24.6908 21.915C24.2714 22.1979 23.7314 22.3633 23.0996 22.3633C21.8791 22.3633 20.8438 21.5409 20.473 20.4324H18.9189V21.6381C19.6888 23.166 21.2713 24.2145 23.0996 24.2145C24.3632 24.2145 25.4247 23.7989 26.1974 23.0836L24.6908 21.915Z"
+                                        fill="#34A853" />
+                                    <path
+                                        d="M20.3266 19.5379C20.3266 19.2266 20.3785 18.9258 20.473 18.6429V17.4372H18.9189C18.6005 18.069 18.4214 18.7821 18.4214 19.5379C18.4214 20.2937 18.601 21.0068 18.9189 21.6386L20.473 20.4329C20.3785 20.15 20.3266 19.8492 20.3266 19.5379Z"
+                                        fill="#FABB05" />
+                                    <path
+                                        d="M23.0996 16.712C23.7892 16.712 24.4068 16.9495 24.8945 17.4137L26.2296 16.0797C25.4187 15.3245 24.3615 14.8608 23.0996 14.8608C21.2719 14.8608 19.6888 15.9093 18.9189 17.4372L20.473 18.6429C20.8437 17.5344 21.8791 16.712 23.0996 16.712Z"
+                                        fill="#E94235" />
+                                </g>
+                                <defs>
+                                    <filter id="filter0_dd_20_328" x="0.268746" y="0.293736" width="64.9911"
+                                        height="48.4071" filterUnits="userSpaceOnUse"
+                                        color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                        <feOffset dy="0.448214" />
+                                        <feGaussianBlur stdDeviation="2.24107" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 0.717647 0 0 0 0 0.717647 0 0 0 0 0.717647 0 0 0 0.08 0" />
+                                        <feBlend mode="normal" in2="BackgroundImageFix"
+                                            result="effect1_dropShadow_20_328" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                        <feOffset dy="4.48214" />
+                                        <feGaussianBlur stdDeviation="4.48214" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 0.717647 0 0 0 0 0.717647 0 0 0 0 0.717647 0 0 0 0.08 0" />
+                                        <feBlend mode="normal" in2="effect1_dropShadow_20_328"
+                                            result="effect2_dropShadow_20_328" />
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_20_328"
+                                            result="shape" />
+                                    </filter>
+                                </defs>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--  -->
+        </div>
+    </div>
+    <!-- end grid wide -->
+    
+</footer>
+    </div>
+</body>
+
+</html>
+<script>
+    const setLabel = (lbl, val) => {
+        const label = $(`#slider-${lbl}-label`);
+        label.text(`$${val}`);
+        const slider = $(`#slider-div .${lbl}-slider-handle`);
+        const rect = slider[0].getBoundingClientRect();
+        label.offset({
+            bottom: rect.bottom + 5, 
+            left: rect.left + (rect.width / 2) - (label.width() / 2) 
+        });
+      }
+      
+      const setLabels = (values) => {
+        setLabel("min", values[0]);
+        setLabel("max", values[1]);
+      }
+      
+      
+      $('#ex2').slider().on('slide', function(ev) {
+        setLabels(ev.value);
+      });
+      setLabels($('#ex2').attr("data-value").split(","));
+</script>
