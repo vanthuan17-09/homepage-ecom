@@ -21,6 +21,7 @@
         <link rel="stylesheet" href="./assets/css/details.css">
         <link rel="stylesheet" href="./assets/css/casual.css">
         <link rel="stylesheet" href="./assets/css/responsive.css">
+        <script src="./assets/javascript/main.js"></script>
         <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.6.0/css/all.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap&subset=vietnamese"
             rel="stylesheet">
@@ -53,33 +54,42 @@
                             </div>
                             <!--  -->
     
-                            <div class="offcanvas offcanvas-start w-75" tabindex="-1" id="offcanvasExample"
+                            <div class="offcanvas offcanvas-start w-50" tabindex="-1" id="offcanvasExample"
                                 aria-labelledby="offcanvasExampleLabel">
-                                <button type="button" class="btn-close position-absolute " data-bs-dismiss="offcanvas"
-                                    aria-label="Close"></button>
     
+                               
                                 <ul class="header__navbar-list " id="navbar">
-                                    <li class="header__navbar-item dropdown">
-                                        <a href="" class="header__navbar-link" role="button" data-bs-toggle="dropdown"
-                                            aria-expanded="false">Shop
+    
+                                    <li class="header__navbar-item ">
+                                        <a class="header__navbar-link" data-bs-toggle="collapse"
+                                            href="#header-navbar-link__shopMore" role="button" aria-expanded="false"
+                                            aria-controls="collapseExample">Shop
                                             <i class="fa-solid fa-angle-down"></i>
                                         </a>
-                                        <ul class="dropdown-menu w-100" style="">
-                                            <li><a class="dropdown-item p-3 fs-5" href="#">Action</a></li>
-                                            <li><a class="dropdown-item p-3 fs-5" href="#">Another action</a></li>
-                                            <li><a class="dropdown-item p-3 fs-5" href="#">Something else here</a></li>
+                                        <ul class="collapse  list-unstyled border-0 w-100 "
+                                            id="header-navbar-link__shopMore">
+                                        
+                                            <li class="ps-3 header__navbar-item">
+                                                <a href="" class="header__navbar-link">Man</a>
+                                            </li>
+                                            <li class="ps-3 header__navbar-item">
+                                                <a href="" class="header__navbar-link">Woman</a>
+                                            </li>
+                                            <div class="line line-home-details__mobilefheader__search__searchIcon-mobile hide-on-pc hide-on-tablet "></div>
                                         </ul>
     
-                                        <!--  -->
+    
                                     </li>
                                     <li class="header__navbar-item">
                                         <a href="" class="header__navbar-link">On Sale</a>
     
                                     </li>
+    
                                     <li class="header__navbar-item">
                                         <a href="" class="header__navbar-link">New Arrivals</a>
     
                                     </li>
+    
                                     <li class="header__navbar-item">
                                         <a href="" class="header__navbar-link">Brands</a>
     
@@ -127,10 +137,10 @@
                                     aria-expanded="false">Shop
                                     <i class="fa-solid fa-angle-down"></i>
                                 </a>
-                                <ul class="dropdown-menu ">
-                                    <li><a class="dropdown-item p-3 fs-5" href="#">Action</a></li>
-                                    <li><a class="dropdown-item p-3 fs-5" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item p-3 fs-5" href="#">Something else here</a></li>
+                                <ul class="dropdown-menu p-0 dropdown__shopMore ">
+                                    <li><a class="dropdown-item p-3 fs-5" href="#">Men</a></li>
+                                    <li><a class="dropdown-item p-3 fs-5" href="#">Woman</a></li>
+    
                                 </ul>
     
                                 <!--  -->
@@ -163,40 +173,41 @@
                                 <i class="hide-on-pc fa-solid fa-magnifying-glass header__logo-auth-icon"></i>
     
                             </div>
-                            <i class="fa-solid fa-cart-shopping header__logo-auth-icon"></i>
+                            <a href="./Cart.html" style="color: unset;" class="header__logo-auth-link">
+                                <i class="fa-solid fa-cart-shopping header__logo-auth-icon"></i>
     
-                            <i class="fa-regular fa-circle-user header__logo-auth-icon" data-bs-toggle="offcanvas"
-                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
-                            <div class="offcanvas offcanvas-end w-75" tabindex="-1" id="offcanvasRight"
+                            </a>
+    <a style="color: unset;" href="" class="header__logo-auth-link"data-bs-toggle="offcanvas"
+    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+        <i class="fa-regular fa-circle-user header__logo-auth-icon" ></i>
+    </a>
+                          
+                            <div class="offcanvas offcanvas-end w-50 offcanvas-SignIn" tabindex="-1" id="offcanvasRight"
                                 aria-labelledby="offcanvasRightLabel">
-                                <div class="offcanvas-header">
-                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="offcanvas-body">
+    
+                                <div class="offcanvas-body offcanvas-body-signIn ">
                                     <form>
     
-                                        <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+                                        <h1 class=" offcanvas-body-signIn__heading">Please sign in</h1>
     
-                                        <div class="form-floating">
-                                            <input type="email" class="form-control" id="floatingInput"
-                                                placeholder="name@example.com">
-                                            <label for="floatingInput">Email address</label>
+    
+                                        <div class="form-signIn">
+                                            <input type="email" placeholder="Email address" class="form-signIn__input">
                                         </div>
-                                        <div class="form-floating mt-1">
-                                            <input type="password" class="form-control" id="floatingPassword"
-                                                placeholder="Password">
-                                            <label for="floatingPassword">Password</label>
+                                        <div class="form-signIn mt-3">
+                                            <input type="password" placeholder="Password" class="form-signIn__input">
                                         </div>
     
-                                        <div class="form-check text-start my-3">
-                                            <input class="form-check-input" type="checkbox" value="remember-me"
-                                                id="flexCheckDefault">
-                                            <label class="form-check-label" for="flexCheckDefault">
+    
+                                        <div class="form-check offcanvas-body-signIn_form-check my-3">
+                                            <input class="form-check-input offcanvas-body-signIn__check__input"
+                                                type="checkbox" value="remember-me" id="flexCheckDefault">
+                                            <label class="form-check-label offcanvas-body-signIn__label"
+                                                for="flexCheckDefault">
                                                 Remember me
                                             </label>
                                         </div>
-                                        <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
+                                        <button class="btn fs-16  btn-primary w-100 py-2" type="submit">Sign in</button>
                                         <p class="mt-5 mb-3 text-body-secondary">© 2017–2024</p>
                                     </form>
                                 </div>
@@ -211,7 +222,7 @@
     
                         <nav class="navbar bg-white">
                             <div class="container-fluid justify-content-center align-items-center">
-                                <form class="d-flex pb-3 " role="search">
+                                <form class="d-flex p-2  " role="search">
                                     <input style="width: 260px;height:30px;border-radius:12px" class="form-control me-2"
                                         type="search" placeholder="Search" aria-label="Search">
                                     <button style="width: 60px;height:30px;border-radius:12px"
@@ -468,10 +479,10 @@
                   </svg>
             </p>
         <!--  -->
-        <ul class="dropdown-menu w-100">
-            <li><a class="dropdown-item casual-product-heading__sort-choose mg-0 p-3" href="#">Most Popular</a></li>
-            <li><a class="dropdown-item casual-product-heading__sort-choose mg-0 p-3" href="#">Most Popular</a></li>
-            <li><a class="dropdown-item casual-product-heading__sort-choose mg-0 p-3" href="#">Most Popular</a></li>
+        <ul class="dropdown-menu w-100 p-0">
+            <li><a class="dropdown-item casual-product-heading__sort-choose mg-0 p-3 opacity-75" href="#">Most Popular</a></li>
+            <li><a class="dropdown-item casual-product-heading__sort-choose mg-0 p-3 opacity-75" href="#"> Popular</a></li>
+            <li><a class="dropdown-item casual-product-heading__sort-choose mg-0 p-3 opacity-75" href="#">Most Popular</a></li>
           </ul>
      
         <!--  -->

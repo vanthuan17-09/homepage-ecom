@@ -16,9 +16,11 @@
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
+    <script src="./assets/javascript/main.js"></script>
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.6.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap&subset=vietnamese"
         rel="stylesheet">
+
 </head>
 
 <body>
@@ -49,33 +51,42 @@
                         </div>
                         <!--  -->
 
-                        <div class="offcanvas offcanvas-start w-75" tabindex="-1" id="offcanvasExample"
+                        <div class="offcanvas offcanvas-start w-50" tabindex="-1" id="offcanvasExample"
                             aria-labelledby="offcanvasExampleLabel">
-                            <button type="button" class="btn-close position-absolute " data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
 
+                           
                             <ul class="header__navbar-list " id="navbar">
-                                <li class="header__navbar-item dropdown">
-                                    <a href="" class="header__navbar-link" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">Shop
-                                        <i class="fa-solid fa-angle-down"></i>
+
+                                <li class="header__navbar-item ">
+                                    <a class="header__navbar-link" data-bs-toggle="collapse"
+                                        href="#header-navbar-link__shopMore" role="button" aria-expanded="false"
+                                        aria-controls="collapseExample">Shop
+                                        <i class="fa-solid fa-angle-down header__navbar-iconArrow"></i>
                                     </a>
-                                    <ul class="dropdown-menu w-100" style="">
-                                        <li><a class="dropdown-item p-3 fs-5" href="#">Action</a></li>
-                                        <li><a class="dropdown-item p-3 fs-5" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item p-3 fs-5" href="#">Something else here</a></li>
+                                    <ul class="collapse  list-unstyled border-0 w-100 "
+                                        id="header-navbar-link__shopMore">
+                                    
+                                        <li class="ps-3 header__navbar-item">
+                                            <a href="" class="header__navbar-link">Man</a>
+                                        </li>
+                                        <li class="ps-3 header__navbar-item">
+                                            <a href="" class="header__navbar-link">Woman</a>
+                                        </li>
+                                        <div class="line line-home-details__mobilefheader__search__searchIcon-mobile hide-on-pc hide-on-tablet "></div>
                                     </ul>
 
-                                    <!--  -->
+
                                 </li>
                                 <li class="header__navbar-item">
                                     <a href="" class="header__navbar-link">On Sale</a>
 
                                 </li>
+
                                 <li class="header__navbar-item">
                                     <a href="" class="header__navbar-link">New Arrivals</a>
 
                                 </li>
+
                                 <li class="header__navbar-item">
                                     <a href="" class="header__navbar-link">Brands</a>
 
@@ -123,10 +134,10 @@
                                 aria-expanded="false">Shop
                                 <i class="fa-solid fa-angle-down"></i>
                             </a>
-                            <ul class="dropdown-menu ">
-                                <li><a class="dropdown-item p-3 fs-5" href="#">Action</a></li>
-                                <li><a class="dropdown-item p-3 fs-5" href="#">Another action</a></li>
-                                <li><a class="dropdown-item p-3 fs-5" href="#">Something else here</a></li>
+                            <ul class="dropdown-menu p-0 dropdown__shopMore ">
+                                <li><a class="dropdown-item p-3 fs-5" href="#">Men</a></li>
+                                <li><a class="dropdown-item p-3 fs-5" href="#">Woman</a></li>
+
                             </ul>
 
                             <!--  -->
@@ -159,40 +170,41 @@
                             <i class="hide-on-pc fa-solid fa-magnifying-glass header__logo-auth-icon"></i>
 
                         </div>
-                        <i class="fa-solid fa-cart-shopping header__logo-auth-icon"></i>
+                        <a href="./Cart.html" style="color: unset;" class="header__logo-auth-link">
+                            <i class="fa-solid fa-cart-shopping header__logo-auth-icon"></i>
 
-                        <i class="fa-regular fa-circle-user header__logo-auth-icon" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
-                        <div class="offcanvas offcanvas-end w-75" tabindex="-1" id="offcanvasRight"
+                        </a>
+<a style="color: unset;" href="" class="header__logo-auth-link"data-bs-toggle="offcanvas"
+data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+    <i class="fa-regular fa-circle-user header__logo-auth-icon" ></i>
+</a>
+                      
+                        <div class="offcanvas offcanvas-end w-50 offcanvas-SignIn" tabindex="-1" id="offcanvasRight"
                             aria-labelledby="offcanvasRightLabel">
-                            <div class="offcanvas-header">
-                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="offcanvas-body">
+
+                            <div class="offcanvas-body offcanvas-body-signIn ">
                                 <form>
 
-                                    <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+                                    <h1 class=" offcanvas-body-signIn__heading">Please sign in</h1>
 
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control" id="floatingInput"
-                                            placeholder="name@example.com">
-                                        <label for="floatingInput">Email address</label>
+
+                                    <div class="form-signIn">
+                                        <input type="email" placeholder="Email address" class="form-signIn__input">
                                     </div>
-                                    <div class="form-floating mt-1">
-                                        <input type="password" class="form-control" id="floatingPassword"
-                                            placeholder="Password">
-                                        <label for="floatingPassword">Password</label>
+                                    <div class="form-signIn mt-3">
+                                        <input type="password" placeholder="Password" class="form-signIn__input">
                                     </div>
 
-                                    <div class="form-check text-start my-3">
-                                        <input class="form-check-input" type="checkbox" value="remember-me"
-                                            id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
+
+                                    <div class="form-check offcanvas-body-signIn_form-check my-3">
+                                        <input class="form-check-input offcanvas-body-signIn__check__input"
+                                            type="checkbox" value="remember-me" id="flexCheckDefault">
+                                        <label class="form-check-label offcanvas-body-signIn__label"
+                                            for="flexCheckDefault">
                                             Remember me
                                         </label>
                                     </div>
-                                    <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
+                                    <button class="btn fs-16  btn-primary w-100 py-2" type="submit">Sign in</button>
                                     <p class="mt-5 mb-3 text-body-secondary">© 2017–2024</p>
                                 </form>
                             </div>
@@ -207,7 +219,7 @@
 
                     <nav class="navbar bg-white">
                         <div class="container-fluid justify-content-center align-items-center">
-                            <form class="d-flex pb-3 " role="search">
+                            <form class="d-flex p-2  " role="search">
                                 <input style="width: 260px;height:30px;border-radius:12px" class="form-control me-2"
                                     type="search" placeholder="Search" aria-label="Search">
                                 <button style="width: 60px;height:30px;border-radius:12px"
@@ -359,13 +371,15 @@
 
                 <div class="product-intro">
                     <h1 class="heading__product">NEW ARRIVALS</h1>
-                 
+
                     <!--  -->
-                    <div class="carousel " data-flickity='{"autoPlay": true, "groupCells" : true, "pageDots": false, "prevNextButtons": false,"freeScroll": true }'>
+                    <div class="carousel "
+                        data-flickity='{"autoPlay": true, "groupCells" : true, "pageDots": false, "prevNextButtons": false,"freeScroll": true }'>
                         <div class="carousel-cell carousel-cell__product ">
                             <a href="" class="home-product-item">
 
-                                <img class="home-product-item__img" src="./assets/img/home-product/ao_new-rules.png" alt="">
+                                <img class="home-product-item__img" src="./assets/img/home-product/ao_new-rules.png"
+                                    alt="">
 
                                 <h4 class="home-product-item__name">
                                     T-SHIRT WITH TAPE DETAILS
@@ -380,7 +394,8 @@
                                     </span>
                                     <div class="home-product-item__evaluate-wrap">
                                         <span class="home-product-item__evaluate">4.5/</span>
-                                        <span class="home-product-item__evaluate home-product-item__evaluate--blur">5</span>
+                                        <span
+                                            class="home-product-item__evaluate home-product-item__evaluate--blur">5</span>
 
                                     </div>
 
@@ -394,7 +409,8 @@
                         <div class="carousel-cell carousel-cell__product">
                             <a href="" class="home-product-item">
 
-                                <img class="home-product-item__img" src="./assets/img/home-product/quan-jean-xanh.png" alt="">
+                                <img class="home-product-item__img" src="./assets/img/home-product/quan-jean-xanh.png"
+                                    alt="">
 
                                 <h4 class="home-product-item__name">
                                     SKINNY FIT JEANS
@@ -409,7 +425,8 @@
                                     </span>
                                     <div class="home-product-item__evaluate-wrap">
                                         <span class="home-product-item__evaluate">3.5/</span>
-                                        <span class=" home-product-item__evaluate home-product-item__evaluate--blur">5</span>
+                                        <span
+                                            class=" home-product-item__evaluate home-product-item__evaluate--blur">5</span>
                                     </div>
                                 </div>
                                 <div class="home-product-item__price">
@@ -424,7 +441,8 @@
                         <div class="carousel-cell carousel-cell__product">
                             <a href="" class="home-product-item">
 
-                                <img class="home-product-item__img" src="./assets/img/home-product/ao-so-mi-ke-do.png" alt="">
+                                <img class="home-product-item__img" src="./assets/img/home-product/ao-so-mi-ke-do.png"
+                                    alt="">
 
                                 <h4 class="home-product-item__name">
                                     CHECKERED SHIRT
@@ -440,7 +458,8 @@
                                     </span>
                                     <div class="home-product-item__evaluate-wrap">
                                         <span class="home-product-item__evaluate">4.5/</span>
-                                        <span class="home-product-item__evaluate home-product-item__evaluate--blur">5</span>
+                                        <span
+                                            class="home-product-item__evaluate home-product-item__evaluate--blur">5</span>
                                     </div>
                                 </div>
                                 <div class="home-product-item__price">
@@ -448,40 +467,42 @@
 
                                 </div>
                             </a>
-                        
-                    </div>
-                    <div class="carousel-cell carousel-cell__product">
-                        <a href="" class="home-product-item">
 
-                            <img class="home-product-item__img" src="./assets/img/home-product/ao-phong-ke-den.png" alt="">
+                        </div>
+                        <div class="carousel-cell carousel-cell__product">
+                            <a href="" class="home-product-item">
 
-                            <h4 class="home-product-item__name">
-                                SLEEVE STRIPED T-SHIRT
-                            </h4>
-                            <div class="home-product-item__action">
-                                <span class="home-product-item__star">
-                                    <i class="home-product-item__star-icon fa-solid fa-star"></i>
-                                    <i class="home-product-item__star-icon fa-solid fa-star"></i>
-                                    <i class="home-product-item__star-icon fa-solid fa-star"></i>
-                                    <i class="home-product-item__star-icon fa-solid fa-star"></i>
-                                    <i class="home-product-item__star-icon fa-solid fa-star-half"></i>
+                                <img class="home-product-item__img" src="./assets/img/home-product/ao-phong-ke-den.png"
+                                    alt="">
 
-                                </span>
-                                <div class="home-product-item__evaluate-wrap">
-                                    <span class="home-product-item__evaluate">4.5/</span>
-                                    <span class="home-product-item__evaluate home-product-item__evaluate--blur">5</span>
+                                <h4 class="home-product-item__name">
+                                    SLEEVE STRIPED T-SHIRT
+                                </h4>
+                                <div class="home-product-item__action">
+                                    <span class="home-product-item__star">
+                                        <i class="home-product-item__star-icon fa-solid fa-star"></i>
+                                        <i class="home-product-item__star-icon fa-solid fa-star"></i>
+                                        <i class="home-product-item__star-icon fa-solid fa-star"></i>
+                                        <i class="home-product-item__star-icon fa-solid fa-star"></i>
+                                        <i class="home-product-item__star-icon fa-solid fa-star-half"></i>
+
+                                    </span>
+                                    <div class="home-product-item__evaluate-wrap">
+                                        <span class="home-product-item__evaluate">4.5/</span>
+                                        <span
+                                            class="home-product-item__evaluate home-product-item__evaluate--blur">5</span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="home-product-item__price">
-                                <span class="home-product-item__price-real">$130</span>
-                                <span class="home-product-item__price-sale--blur">$160</span>
-                                <div class="home-product-item__price-sale">
-                                    <span class="home-product-item__price--sale__price">-30%</span>
+                                <div class="home-product-item__price">
+                                    <span class="home-product-item__price-real">$130</span>
+                                    <span class="home-product-item__price-sale--blur">$160</span>
+                                    <div class="home-product-item__price-sale">
+                                        <span class="home-product-item__price--sale__price">-30%</span>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </div>
-                      </div>
                     <!-- item-img -->
                     <div class="home-product__viewAll">
                         <button class="btn__viewALL">View ALL</button>
@@ -493,14 +514,16 @@
                 </div>
 
 
-<!-- product intro begin -->
+                <!-- product intro begin -->
                 <div class="product-intro">
                     <h1 class="heading__product">TOP SELLING</h1>
-                    <div class="carousel " data-flickity='{"autoPlay": true, "groupCells" : true, "pageDots": false, "prevNextButtons": false,"freeScroll": true }'>
+                    <div class="carousel "
+                        data-flickity='{"autoPlay": true, "groupCells" : true, "pageDots": false, "prevNextButtons": false,"freeScroll": true }'>
                         <div class="carousel-cell carousel-cell__product ">
                             <a href="" class="home-product-item">
 
-                                <img class="home-product-item__img" src="./assets/img/home-product/ao-so-mi-ke-xanh.png" alt="">
+                                <img class="home-product-item__img" src="./assets/img/home-product/ao-so-mi-ke-xanh.png"
+                                    alt="">
 
                                 <h4 class="home-product-item__name">
                                     VERTICAL STRIPED SHIRT
@@ -517,7 +540,8 @@
                                     <div class="home-product-item__evaluate-wrap">
                                         <div class="home-product-item__evaluate-wrap">
                                             <span class="home-product-item__evaluate">5.0/</span>
-                                            <span class="home-product-item__evaluate home-product-item__evaluate--blur">5</span>
+                                            <span
+                                                class="home-product-item__evaluate home-product-item__evaluate--blur">5</span>
                                         </div>
                                     </div>
                                 </div>
@@ -533,7 +557,8 @@
                         <div class="carousel-cell carousel-cell__product">
                             <a href="" class="home-product-item">
 
-                                <img class="home-product-item__img" src="./assets/img/home-product/ao-phong-cam.png" alt="">
+                                <img class="home-product-item__img" src="./assets/img/home-product/ao-phong-cam.png"
+                                    alt="">
 
                                 <h4 class="home-product-item__name">
                                     COURAGE GRAPHIC T-SHIRT
@@ -548,7 +573,8 @@
                                     <div class="home-product-item__evaluate-wrap">
                                         <div class="home-product-item__evaluate-wrap">
                                             <span class="home-product-item__evaluate">4.0/</span>
-                                            <span class="home-product-item__evaluate home-product-item__evaluate--blur">5</span>
+                                            <span
+                                                class="home-product-item__evaluate home-product-item__evaluate--blur">5</span>
                                         </div>
                                     </div>
                                 </div>
@@ -561,7 +587,8 @@
                         <div class="carousel-cell carousel-cell__product">
                             <a href="" class="home-product-item">
 
-                                <img class="home-product-item__img" src="./assets/img/home-product/quan-ngo-jean-xanh.png" alt="">
+                                <img class="home-product-item__img"
+                                    src="./assets/img/home-product/quan-ngo-jean-xanh.png" alt="">
 
                                 <h4 class="home-product-item__name">
                                     LOOSE FIT BERMUDA SHORTS
@@ -575,7 +602,8 @@
                                     <div class="home-product-item__evaluate-wrap">
                                         <div class="home-product-item__evaluate-wrap">
                                             <span class="home-product-item__evaluate">3.0/</span>
-                                            <span class="home-product-item__evaluate home-product-item__evaluate--blur">5</span>
+                                            <span
+                                                class="home-product-item__evaluate home-product-item__evaluate--blur">5</span>
                                         </div>
                                     </div>
                                 </div>
@@ -583,40 +611,42 @@
                                     <span class="home-product-item__price-real">$80</span>
                                 </div>
                             </a>
-                        
-                    </div>
-                    <div class="carousel-cell carousel-cell__product">
-                        <a href="" class="home-product-item">
 
-                            <img class="home-product-item__img" src="./assets/img/home-product/quan-jean-den.png" alt="">
+                        </div>
+                        <div class="carousel-cell carousel-cell__product">
+                            <a href="" class="home-product-item">
 
-                            <h4 class="home-product-item__name">
-                                FADED SKINNY JEANS
-                            </h4>
-                            <div class="home-product-item__action">
-                                <span class="home-product-item__star">
-                                    <i class="home-product-item__star-icon fa-solid fa-star"></i>
-                                    <i class="home-product-item__star-icon fa-solid fa-star"></i>
-                                    <i class="home-product-item__star-icon fa-solid fa-star"></i>
-                                    <i class="home-product-item__star-icon fa-solid fa-star"></i>
-                                    <i class="home-product-item__star-icon fa-solid fa-star-half"></i>
+                                <img class="home-product-item__img" src="./assets/img/home-product/quan-jean-den.png"
+                                    alt="">
 
-                                </span>
-                                <div class="home-product-item__evaluate-wrap">
+                                <h4 class="home-product-item__name">
+                                    FADED SKINNY JEANS
+                                </h4>
+                                <div class="home-product-item__action">
+                                    <span class="home-product-item__star">
+                                        <i class="home-product-item__star-icon fa-solid fa-star"></i>
+                                        <i class="home-product-item__star-icon fa-solid fa-star"></i>
+                                        <i class="home-product-item__star-icon fa-solid fa-star"></i>
+                                        <i class="home-product-item__star-icon fa-solid fa-star"></i>
+                                        <i class="home-product-item__star-icon fa-solid fa-star-half"></i>
+
+                                    </span>
                                     <div class="home-product-item__evaluate-wrap">
-                                        <span class="home-product-item__evaluate">4.5/</span>
-                                        <span class="home-product-item__evaluate home-product-item__evaluate--blur">5</span>
+                                        <div class="home-product-item__evaluate-wrap">
+                                            <span class="home-product-item__evaluate">4.5/</span>
+                                            <span
+                                                class="home-product-item__evaluate home-product-item__evaluate--blur">5</span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="home-product-item__price">
-                                <span class="home-product-item__price-real">$210</span>
+                                <div class="home-product-item__price">
+                                    <span class="home-product-item__price-real">$210</span>
 
-                            </div>
-                        </a>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                      </div>
-            
+
                     <!-- item-img -->
                     <div class="home-product__viewAll">
                         <button class="btn__viewALL">View ALL</button>
@@ -631,8 +661,9 @@
                     <div class="home-styles__item">
                         <div class="row ">
                             <div class="col l-4 c-12  ">
-                                <div style="background-image: url(./assets/img/home-styles/casuals.png);"
-                                    class="home-styles__item-wrap">
+          
+                                <div 
+                                    class="home-styles__item-wrap" style="background-image: url(./assets/img/home-styles/casuals.png);">
                                     <!-- <img class="home-styles__item-img" src="./assets/img/home-styles/casuals.png" alt=""> -->
                                     <p class="home-styles__item-name">Casual</p>
                                 </div>
@@ -682,89 +713,22 @@
                         </h1>
 
                         <div class="home-customers__arrow">
-                            <i style="margin-right: 16px;" class="home-customers__arow-icon fa-solid fa-arrow-left "data-bs-target="#carouselExample" data-bs-slide="prev"
+                            <i style="margin-right: 16px;" class="home-customers__arow-icon fa-solid fa-arrow-left " id="prevSlide"
                             ></i>
-                            <i class="home-customers__arow-icon fa-solid fa-arrow-right"data-bs-target="#carouselExample" data-bs-slide="next"
+                            <i class="home-customers__arow-icon fa-solid fa-arrow-right"id="nextSlide"
                            ></i>
                        
                         </div>
-                       
+
                     </div>
 
                     <!-- home customers begin -->
-                 
+
                 </div>
 
                 <!--  -->
-                <div id="carouselExample" class="carousel" data-flickity='{ "groupCells":3, "pageDots": false, "prevNextButtons": false,"freeScroll": true,
-"wrapAround": true }'>
-                  
-    <div class="carousel-cell carousel-cell__customers " >
-                        <div class="home-customers__cart">
-                            <div class="home-customers__star">
-                                <i class="home-customers__star-icon fa-solid fa-star"></i>
-                                <i class="home-customers__star-icon fa-solid fa-star"></i>
-                                <i class="home-customers__star-icon fa-solid fa-star"></i>
-                                <i class="home-customers__star-icon fa-solid fa-star"></i>
-                                <i class="home-customers__star-icon fa-solid fa-star"></i>
-                            </div>
-                            <div class="home-customers__user">
-                                <p class="home-customers__name">Sarah M.</p>
-                                <div class="home-customers__check">
-                                    <i class="home-customers__check-icon fa-solid fa-check"></i>
-                                </div>
-                            </div>
-                            <p class="home-customers__body">
-                                "I'm blown away by the quality and style of the clothes I received from Shop.co.
-                                From casual wear to elegant dresses, every piece I've bought has exceeded my
-                                expectations.”
-                            </p>
-                        </div>
-                    </div>
-                    <div class="carousel-cell carousel-cell__customers ">
-                        <div class="home-customers__cart">
-                            <div class="home-customers__star">
-                                <i class="home-customers__star-icon fa-solid fa-star"></i>
-                                <i class="home-customers__star-icon fa-solid fa-star"></i>
-                                <i class="home-customers__star-icon fa-solid fa-star"></i>
-                                <i class="home-customers__star-icon fa-solid fa-star"></i>
-                                <i class="home-customers__star-icon fa-solid fa-star"></i>
-                            </div>
-                            <div class="home-customers__user">
-                                <p class="home-customers__name">Alex K.</p>
-                                <div class="home-customers__check">
-                                    <i class="home-customers__check-icon fa-solid fa-check"></i>
-                                </div>
-                            </div>
-                            <p class="home-customers__body">
-                                "Finding clothes that align with my personal style used to be a challenge until
-                                I discovered Shop.co. The range of options they offer is truly remarkable,
-                                catering to a variety of tastes and occasions.”
-                            </p>
-                        </div>
-                    </div>
-                    <div class="carousel-cell carousel-cell__customers ">
-                        <div class="home-customers__cart">
-                            <div class="home-customers__star">
-                                <i class="home-customers__star-icon fa-solid fa-star"></i>
-                                <i class="home-customers__star-icon fa-solid fa-star"></i>
-                                <i class="home-customers__star-icon fa-solid fa-star"></i>
-                                <i class="home-customers__star-icon fa-solid fa-star"></i>
-                                <i class="home-customers__star-icon fa-solid fa-star"></i>
-                            </div>
-                            <div class="home-customers__user">
-                                <p class="home-customers__name">James L.</p>
-                                <div class="home-customers__check">
-                                    <i class="home-customers__check-icon fa-solid fa-check"></i>
-                                </div>
-                            </div>
-                            <p class="home-customers__body">
-                                "As someone who's always on the lookout for unique fashion pieces, I'm thrilled
-                                to have stumbled upon Shop.co. The selection of clothes is not only diverse but
-                                also on-point with the latest trends.”
-                            </p>
-                        </div>
-                    </div>
+                <div id="carousel-customers" class="carousel">
+                    <!-- "prevNextButtons": false -->
                     <div class="carousel-cell carousel-cell__customers ">
                         <div class="home-customers__cart">
                             <div class="home-customers__star">
@@ -831,9 +795,75 @@
                             </p>
                         </div>
                     </div>
-                    
-                
-                    
+                    <div class="carousel-cell carousel-cell__customers ">
+                        <div class="home-customers__cart">
+                            <div class="home-customers__star">
+                                <i class="home-customers__star-icon fa-solid fa-star"></i>
+                                <i class="home-customers__star-icon fa-solid fa-star"></i>
+                                <i class="home-customers__star-icon fa-solid fa-star"></i>
+                                <i class="home-customers__star-icon fa-solid fa-star"></i>
+                                <i class="home-customers__star-icon fa-solid fa-star"></i>
+                            </div>
+                            <div class="home-customers__user">
+                                <p class="home-customers__name">Sarah M.</p>
+                                <div class="home-customers__check">
+                                    <i class="home-customers__check-icon fa-solid fa-check"></i>
+                                </div>
+                            </div>
+                            <p class="home-customers__body">
+                                "I'm blown away by the quality and style of the clothes I received from Shop.co.
+                                From casual wear to elegant dresses, every piece I've bought has exceeded my
+                                expectations.”
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-cell carousel-cell__customers ">
+                        <div class="home-customers__cart">
+                            <div class="home-customers__star">
+                                <i class="home-customers__star-icon fa-solid fa-star"></i>
+                                <i class="home-customers__star-icon fa-solid fa-star"></i>
+                                <i class="home-customers__star-icon fa-solid fa-star"></i>
+                                <i class="home-customers__star-icon fa-solid fa-star"></i>
+                                <i class="home-customers__star-icon fa-solid fa-star"></i>
+                            </div>
+                            <div class="home-customers__user">
+                                <p class="home-customers__name">Alex K.</p>
+                                <div class="home-customers__check">
+                                    <i class="home-customers__check-icon fa-solid fa-check"></i>
+                                </div>
+                            </div>
+                            <p class="home-customers__body">
+                                "Finding clothes that align with my personal style used to be a challenge until
+                                I discovered Shop.co. The range of options they offer is truly remarkable,
+                                catering to a variety of tastes and occasions.”
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-cell carousel-cell__customers ">
+                        <div class="home-customers__cart">
+                            <div class="home-customers__star">
+                                <i class="home-customers__star-icon fa-solid fa-star"></i>
+                                <i class="home-customers__star-icon fa-solid fa-star"></i>
+                                <i class="home-customers__star-icon fa-solid fa-star"></i>
+                                <i class="home-customers__star-icon fa-solid fa-star"></i>
+                                <i class="home-customers__star-icon fa-solid fa-star"></i>
+                            </div>
+                            <div class="home-customers__user">
+                                <p class="home-customers__name">James L.</p>
+                                <div class="home-customers__check">
+                                    <i class="home-customers__check-icon fa-solid fa-check"></i>
+                                </div>
+                            </div>
+                            <p class="home-customers__body">
+                                "As someone who's always on the lookout for unique fashion pieces, I'm thrilled
+                                to have stumbled upon Shop.co. The selection of clothes is not only diverse but
+                                also on-point with the latest trends.”
+                            </p>
+                        </div>
+                    </div>
+
+
+
                 </div>
 
                 <!--  -->
@@ -849,7 +879,7 @@
             <div class="grid wide position-relative">
                 <!--  -->
                 <div class="footer-contact">
-        
+
                     <div class="row">
                         <div class="col c-12 m-12 l-6">
                             <h1 class="footer-contact__title">
@@ -860,22 +890,24 @@
                             <div class="footer-contact__form">
                                 <div class="footer-contact__wrap">
                                     <div class="footer-contact__emailIcon"></div>
-                                    <input type="text" placeholder="Enter your email address" class="footer-contact__input">
+                                    <input type="text" placeholder="Enter your email address"
+                                        class="footer-contact__input">
                                 </div>
-        
+
                                 <button class="footer-contact__btn">Subscribe to Newsletter</button>
-        
+
                             </div>
                         </div>
                     </div>
-        
+
                 </div>
                 <div class="footer-info">
                     <div class="row">
                         <div class="col l-4 c-12 m-12">
                             <h1 class="footer-info__title">SHOP.CO</h1>
-        
-                            <p class="footer-info__sub-tile">We have clothes that suits your style and which you’re proud to
+
+                            <p class="footer-info__sub-tile">We have clothes that suits your style and which you’re
+                                proud to
                                 wear. From women to men. </p>
                             <div class="footer-info__socials">
                                 <a class="footer-info__socials-link" href="">
@@ -894,7 +926,7 @@
                                     <i class="footer-info__socials-icon fa-brands fa-github"></i>
                                 </a>
                                 <!--  -->
-        
+
                             </div>
                         </div>
                         <div class="col l-2 c-6 m-6 ">
@@ -991,7 +1023,8 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" width="66" height="49" viewBox="0 0 66 49"
                                         fill="none">
                                         <g filter="url(#filter0_dd_20_320)">
-                                            <rect x="10" y="5" width="46.6143" height="30.0304" rx="5.37857" fill="white" />
+                                            <rect x="10" y="5" width="46.6143" height="30.0304" rx="5.37857"
+                                                fill="white" />
                                             <rect x="9.88795" y="4.88795" width="46.8384" height="30.2545" rx="5.49062"
                                                 stroke="#D6DCE5" stroke-width="0.224107" />
                                             <path
@@ -1004,7 +1037,8 @@
                                                 color-interpolation-filters="sRGB">
                                                 <feFlood flood-opacity="0" result="BackgroundImageFix" />
                                                 <feColorMatrix in="SourceAlpha" type="matrix"
-                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                    result="hardAlpha" />
                                                 <feOffset dy="0.448214" />
                                                 <feGaussianBlur stdDeviation="2.24107" />
                                                 <feColorMatrix type="matrix"
@@ -1012,15 +1046,16 @@
                                                 <feBlend mode="normal" in2="BackgroundImageFix"
                                                     result="effect1_dropShadow_20_320" />
                                                 <feColorMatrix in="SourceAlpha" type="matrix"
-                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                    result="hardAlpha" />
                                                 <feOffset dy="4.48214" />
                                                 <feGaussianBlur stdDeviation="4.48214" />
                                                 <feColorMatrix type="matrix"
                                                     values="0 0 0 0 0.717647 0 0 0 0 0.717647 0 0 0 0 0.717647 0 0 0 0.08 0" />
                                                 <feBlend mode="normal" in2="effect1_dropShadow_20_320"
                                                     result="effect2_dropShadow_20_320" />
-                                                <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_20_320"
-                                                    result="shape" />
+                                                <feBlend mode="normal" in="SourceGraphic"
+                                                    in2="effect2_dropShadow_20_320" result="shape" />
                                             </filter>
                                         </defs>
                                     </svg>
@@ -1035,7 +1070,8 @@
                                                 fill="white" />
                                             <rect x="9.5022" y="4.88795" width="46.8384" height="30.2545" rx="5.49062"
                                                 stroke="#D6DCE5" stroke-width="0.224107" />
-                                            <path d="M36.2699 13.8484H29.4066V26.1819H36.2699V13.8484Z" fill="#FF5F00" />
+                                            <path d="M36.2699 13.8484H29.4066V26.1819H36.2699V13.8484Z"
+                                                fill="#FF5F00" />
                                             <path
                                                 d="M29.8425 20.0151C29.8414 18.8273 30.1105 17.6548 30.6296 16.5864C31.1486 15.518 31.9039 14.5817 32.8383 13.8484C31.6812 12.9389 30.2915 12.3732 28.8282 12.2162C27.3648 12.0591 25.8867 12.3169 24.563 12.9602C23.2392 13.6034 22.1231 14.6061 21.3423 15.8537C20.5614 17.1013 20.1473 18.5434 20.1473 20.0151C20.1473 21.4869 20.5614 22.929 21.3423 24.1766C22.1231 25.4241 23.2392 26.4269 24.563 27.0701C25.8867 27.7133 27.3648 27.9712 28.8282 27.8141C30.2915 27.657 31.6812 27.0914 32.8383 26.1819C31.9039 25.4485 31.1486 24.5122 30.6296 23.4438C30.1105 22.3754 29.8414 21.2029 29.8425 20.0151Z"
                                                 fill="#EB001B" />
@@ -1052,7 +1088,8 @@
                                                 color-interpolation-filters="sRGB">
                                                 <feFlood flood-opacity="0" result="BackgroundImageFix" />
                                                 <feColorMatrix in="SourceAlpha" type="matrix"
-                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                    result="hardAlpha" />
                                                 <feOffset dy="0.448214" />
                                                 <feGaussianBlur stdDeviation="2.24107" />
                                                 <feColorMatrix type="matrix"
@@ -1060,15 +1097,16 @@
                                                 <feBlend mode="normal" in2="BackgroundImageFix"
                                                     result="effect1_dropShadow_20_322" />
                                                 <feColorMatrix in="SourceAlpha" type="matrix"
-                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                    result="hardAlpha" />
                                                 <feOffset dy="4.48214" />
                                                 <feGaussianBlur stdDeviation="4.48214" />
                                                 <feColorMatrix type="matrix"
                                                     values="0 0 0 0 0.717647 0 0 0 0 0.717647 0 0 0 0 0.717647 0 0 0 0.08 0" />
                                                 <feBlend mode="normal" in2="effect1_dropShadow_20_322"
                                                     result="effect2_dropShadow_20_322" />
-                                                <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_20_322"
-                                                    result="shape" />
+                                                <feBlend mode="normal" in="SourceGraphic"
+                                                    in2="effect2_dropShadow_20_322" result="shape" />
                                             </filter>
                                         </defs>
                                     </svg>
@@ -1096,7 +1134,8 @@
                                                 color-interpolation-filters="sRGB">
                                                 <feFlood flood-opacity="0" result="BackgroundImageFix" />
                                                 <feColorMatrix in="SourceAlpha" type="matrix"
-                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                    result="hardAlpha" />
                                                 <feOffset dy="0.448214" />
                                                 <feGaussianBlur stdDeviation="2.24107" />
                                                 <feColorMatrix type="matrix"
@@ -1104,15 +1143,16 @@
                                                 <feBlend mode="normal" in2="BackgroundImageFix"
                                                     result="effect1_dropShadow_20_324" />
                                                 <feColorMatrix in="SourceAlpha" type="matrix"
-                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                    result="hardAlpha" />
                                                 <feOffset dy="4.48214" />
                                                 <feGaussianBlur stdDeviation="4.48214" />
                                                 <feColorMatrix type="matrix"
                                                     values="0 0 0 0 0.717647 0 0 0 0 0.717647 0 0 0 0 0.717647 0 0 0 0.08 0" />
                                                 <feBlend mode="normal" in2="effect1_dropShadow_20_324"
                                                     result="effect2_dropShadow_20_324" />
-                                                <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_20_324"
-                                                    result="shape" />
+                                                <feBlend mode="normal" in="SourceGraphic"
+                                                    in2="effect2_dropShadow_20_324" result="shape" />
                                             </filter>
                                         </defs>
                                     </svg>
@@ -1123,7 +1163,8 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" width="66" height="49" viewBox="0 0 66 49"
                                         fill="none">
                                         <g filter="url(#filter0_dd_20_326)">
-                                            <rect x="9.8429" y="5" width="46.6143" height="30.0304" rx="5.37857" fill="white" />
+                                            <rect x="9.8429" y="5" width="46.6143" height="30.0304" rx="5.37857"
+                                                fill="white" />
                                             <rect x="9.73084" y="4.88795" width="46.8384" height="30.2545" rx="5.49062"
                                                 stroke="#D6DCE5" stroke-width="0.224107" />
                                             <path
@@ -1148,7 +1189,8 @@
                                                 color-interpolation-filters="sRGB">
                                                 <feFlood flood-opacity="0" result="BackgroundImageFix" />
                                                 <feColorMatrix in="SourceAlpha" type="matrix"
-                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                    result="hardAlpha" />
                                                 <feOffset dy="0.448214" />
                                                 <feGaussianBlur stdDeviation="2.24107" />
                                                 <feColorMatrix type="matrix"
@@ -1156,15 +1198,16 @@
                                                 <feBlend mode="normal" in2="BackgroundImageFix"
                                                     result="effect1_dropShadow_20_326" />
                                                 <feColorMatrix in="SourceAlpha" type="matrix"
-                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                    result="hardAlpha" />
                                                 <feOffset dy="4.48214" />
                                                 <feGaussianBlur stdDeviation="4.48214" />
                                                 <feColorMatrix type="matrix"
                                                     values="0 0 0 0 0.717647 0 0 0 0 0.717647 0 0 0 0 0.717647 0 0 0 0.08 0" />
                                                 <feBlend mode="normal" in2="effect1_dropShadow_20_326"
                                                     result="effect2_dropShadow_20_326" />
-                                                <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_20_326"
-                                                    result="shape" />
+                                                <feBlend mode="normal" in="SourceGraphic"
+                                                    in2="effect2_dropShadow_20_326" result="shape" />
                                             </filter>
                                         </defs>
                                     </svg>
@@ -1207,7 +1250,8 @@
                                                 color-interpolation-filters="sRGB">
                                                 <feFlood flood-opacity="0" result="BackgroundImageFix" />
                                                 <feColorMatrix in="SourceAlpha" type="matrix"
-                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                    result="hardAlpha" />
                                                 <feOffset dy="0.448214" />
                                                 <feGaussianBlur stdDeviation="2.24107" />
                                                 <feColorMatrix type="matrix"
@@ -1215,15 +1259,16 @@
                                                 <feBlend mode="normal" in2="BackgroundImageFix"
                                                     result="effect1_dropShadow_20_328" />
                                                 <feColorMatrix in="SourceAlpha" type="matrix"
-                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                    result="hardAlpha" />
                                                 <feOffset dy="4.48214" />
                                                 <feGaussianBlur stdDeviation="4.48214" />
                                                 <feColorMatrix type="matrix"
                                                     values="0 0 0 0 0.717647 0 0 0 0 0.717647 0 0 0 0 0.717647 0 0 0 0.08 0" />
                                                 <feBlend mode="normal" in2="effect1_dropShadow_20_328"
                                                     result="effect2_dropShadow_20_328" />
-                                                <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_20_328"
-                                                    result="shape" />
+                                                <feBlend mode="normal" in="SourceGraphic"
+                                                    in2="effect2_dropShadow_20_328" result="shape" />
                                             </filter>
                                         </defs>
                                     </svg>
@@ -1235,10 +1280,10 @@
                 </div>
             </div>
             <!-- end grid wide -->
-        </div>
-        </footer>
     </div>
-    
+    </footer>
+    </div>
+
 </body>
 
 </html>

@@ -13,6 +13,20 @@ border: 1px solid rgba(0, 0, 0, 0.10);
 }
 .cart-wrap{
     display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.cart-wrap:last-child{
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.shrink {
+    transform: scale(0); /* Thu nhỏ về 0 */
+    opacity: 0; /* Giảm độ trong suốt */
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Hiệu ứng */
 }
 .cart-img-wrap{
 width: 126px;
